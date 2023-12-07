@@ -1,0 +1,30 @@
+svg.svg_db7c0c {
+	&.roleDot__0e331,
+	&.roleDot__1c17c,
+	&.roleDot_c01716,
+	&.roleDotLeft__7559b {
+		& > path.background_aaab2f,
+		& > circle.dotBorderBase_aa84a1,
+		& > circle.dotBorderColor__0b40d {
+			display: none;
+		}
+
+		& > circle.dot__3e6f0 {
+			r: 32;
+		}
+
+		width: 4px;
+		height: 12px;
+		border-radius: 2px;
+		margin-bottom: 3px;
+	}
+
+	&.roleDot__1c17c {
+		margin-bottom: 1px;
+		margin-right: 3px;
+	}
+
+	&.roleDot__0e331 {
+		margin-right: 8px;
+	}
+}

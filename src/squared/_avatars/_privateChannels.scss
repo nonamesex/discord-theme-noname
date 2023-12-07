@@ -1,0 +1,76 @@
+nav.privateChannels__93473 li.channel_c21703,
+div.peopleColumn__51df3 div.peopleListItem_d14722 {
+	img.avatar__991e2 {
+		border-radius: $avatar-32px;
+	}
+}
+
+div.chat__52833 {
+	// Also in guild while screenshare
+	div.upperContainer__993ba img.avatar__991e2 {
+		border-radius: $avatar-24px;
+	}
+
+	div.list__325e7 div.messageRequestItem__3b951 img.avatar__991e2 {
+		border-radius: $avatar-40px;
+	}
+
+	div.chatContainer__23434 div.container_b03b4b img.avatar__991e2 {
+		border-radius: $avatar-80px;
+	}
+}
+
+div.nowPlayingColumn_f5023f div.itemCard__1f162 {
+	div.headerAvatar__27d08 {
+		img.avatar__991e2 {
+			border-radius: $avatar-32px;
+		}
+	}
+
+	div.body__83069 {
+		div.applicationStreamingAvatar_c8ee78 {
+			img.avatar__991e2 {
+				border-radius: $avatar-32px;
+			}
+		}
+
+		div.voiceSectionAssets_d7306c {
+			img.voiceSectionGuildImage_ca8a0f {
+				border-radius: $avatar-32px;
+				-webkit-mask: unset;
+				mask: unset;
+			}
+		}
+
+		div.partyMembers_fff980 {
+			& > div.partyMember__8c6e6 {
+				padding-left: 4px;
+				margin-left: unset;
+				-webkit-mask: unset;
+				mask: unset;
+
+				img.avatar__991e2 {
+					border-radius: $avatar-24px;
+				}
+			}
+
+			div.partyMemberOverflow_d12297 {
+				// width: var(--custom-party-avatars-avatar-diameter);
+				// height: var(--custom-party-avatars-avatar-diameter);
+				border-radius: $avatar-24px;
+				margin-left: 4px;
+				padding: unset;
+			}
+		}
+	}
+}
+
+// Message requests sidebar-chat
+div.container_def45c {
+	div.upperContainer__993ba img.avatar__991e2 {
+		border-radius: $avatar-24px;
+	}
+	div.chat__4eed1 div.messagesWrapper_ea2b0b div.container_b03b4b img.avatar__991e2 {
+		border-radius: $avatar-80px;
+	}
+}

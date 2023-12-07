@@ -1,0 +1,12 @@
+div.picker__6dca7 div.listItems__699d1 div.category_f1b389 {
+	svg > foreignObject {
+		& > img {
+			border-radius: calc($guild-list-normal / 1.5);
+			transition: border-radius 150ms ease-out;
+		}
+
+		&[mask$="squircle)"] > img {
+			border-radius: calc($guild-list-selected / 1.5);
+		}
+	}
+}

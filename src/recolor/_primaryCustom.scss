@@ -1,0 +1,39 @@
+@use "../utils";
+
+// --primary-500: 228 6% 32.5%
+$primary-h: 228;
+$primary-s: 4.5%;
+$primary-l: 17.5%;
+
+$primary-shades:
+	100, 130, 160, 200,
+	230, 260, 300, 330,
+	345, 360, 400, 430,
+	460, 500, 530, 560,
+	600, 630, 645, 660,
+	700, 730, 760, 800,
+	830, 860, 900;
+
+@function mlt($value) {
+	@return utils.lerp(0.4, utils.easeOut($value), $value);
+}
+
+:root {
+	@each $shade in $primary-shades {
+		$mult: 0;
+		$s: 0;
+		$l: 0;
+
+		@if 500 >= $shade {
+			$mult: calc(1 - ($shade - 100) / 400);
+			$s: utils.lerp(utils.easeIn($mult), $primary-s, $primary-s * (1 + 1.475 * $mult));
+			$l: utils.lerp(mlt($mult), $primary-l, 100%);
+		} @else {
+			$mult: calc(($shade - 500) / 400);
+			$s: utils.lerp(utils.easeIn($mult), $primary-s, $primary-s * (1 + 0.3 * $mult));
+			$l: utils.lerp(mlt($mult), $primary-l, 0%);
+		}
+
+		--primary-#{$shade}-hsl: #{$primary-h} calc(var(--saturation-factor, 1) * #{$s}) #{$l};
+	}
+}

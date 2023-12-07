@@ -1,0 +1,73 @@
+$font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
+
+@font-face {
+	font-family: "Uniform Pro Condensed";
+	src: url($font-cdn + "UniformProCon-Med.eot");
+	src: local("Uniform Pro Condensed Medium"), local("UniformProCon-Med"),
+		url($font-cdn + "UniformProCon-Med.eot?#iefix") format("embedded-opentype"),
+		url($font-cdn + "UniformProCon-Med.woff2") format("woff2"),
+		url($font-cdn + "UniformProCon-Med.woff") format("woff"),
+		url($font-cdn + "UniformProCon-Med.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Uniform Pro Condensed";
+	src: url($font-cdn + "UniformProCon-MedIt.eot");
+	src: local("Uniform Pro Condensed Medium Italic"), local("UniformProCon-MedIt"),
+		url($font-cdn + "UniformProCon-MedIt.eot?#iefix") format("embedded-opentype"),
+		url($font-cdn + "UniformProCon-MedIt.woff2") format("woff2"),
+		url($font-cdn + "UniformProCon-MedIt.woff") format("woff"),
+		url($font-cdn + "UniformProCon-MedIt.ttf") format("truetype");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Uniform Pro Condensed";
+	src: url($font-cdn + "UniformProCon-Bld.eot");
+	src: local("Uniform Pro Condensed Bold"), local("UniformProCon-Bld"),
+		url($font-cdn + "UniformProCon-Bld.eot?#iefix") format("embedded-opentype"),
+		url($font-cdn + "UniformProCon-Bld.woff2") format("woff2"),
+		url($font-cdn + "UniformProCon-Bld.woff") format("woff"),
+		url($font-cdn + "UniformProCon-Bld.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Uniform Pro Condensed";
+	src: url($font-cdn + "UniformProCon-BldIt.eot");
+	src: local("Uniform Pro Condensed Bold Italic"), local("UniformProCon-BldIt"),
+		url($font-cdn + "UniformProCon-BldIt.eot?#iefix") format("embedded-opentype"),
+		url($font-cdn + "UniformProCon-BldIt.woff2") format("woff2"),
+		url($font-cdn + "UniformProCon-BldIt.woff") format("woff"),
+		url($font-cdn + "UniformProCon-BldIt.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Uniform Pro Condensed";
+	src: url($font-cdn + "UniformProCon-Blk.eot");
+	src: local("Uniform Pro Condensed Black"), local("UniformProCon-Blk"),
+		url($font-cdn + "UniformProCon-Blk.eot?#iefix") format("embedded-opentype"),
+		url($font-cdn + "UniformProCon-Blk.woff2") format("woff2"),
+		url($font-cdn + "UniformProCon-Blk.woff") format("woff"),
+		url($font-cdn + "UniformProCon-Blk.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Uniform Pro Condensed";
+	src: url($font-cdn + "UniformProCon-BlkIt.eot");
+	src: local("Uniform Pro Condensed Black Italic"), local("UniformProCon-BlkIt"),
+		url($font-cdn + "UniformProCon-BlkIt.eot?#iefix") format("embedded-opentype"),
+		url($font-cdn + "UniformProCon-BlkIt.woff2") format("woff2"),
+		url($font-cdn + "UniformProCon-BlkIt.woff") format("woff"),
+		url($font-cdn + "UniformProCon-BlkIt.ttf") format("truetype");
+	font-weight: 900;
+	font-style: italic;
+}

@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "engines": {
+    "pnpm": ">=8.6.5",
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "sass-embedded": "^1.69.5",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.ts --prod",
+    "build-vc": "tsx scripts/build.ts --prod --mod-vc",
+    "watch-vc": "tsx scripts/build.ts --watch --mod-vc"
+  }
+}

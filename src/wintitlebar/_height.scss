@@ -1,0 +1,44 @@
+$barheight: 30px;
+
+.winButton__88672 {
+	top: unset;
+	height: $barheight;
+}
+
+.typeWindows__5fa63.withFrame__485f4 {
+	height: $barheight;
+	margin-top: unset;
+}
+
+.platform-win {
+	.standardSidebarView__1129a {
+		top: $barheight;
+	}
+
+	.layer__2efaa,
+	.container__4bde3 {
+		top: -$barheight;
+		padding-top: $barheight;
+	}
+
+	.bg__12180 {
+		top: -$barheight;
+	}
+
+	.videoHeight__5c4d5 {
+		&.normal__328d4 {
+			height: calc(50vh - $barheight);
+		}
+		&.noChat__4bab9 {
+			height: calc(100vh - $barheight);
+		}
+	}
+
+	.splashBackground__388cf:before {
+		height: $barheight;
+	}
+}
+
+.settingsWrapper_ae2499.windows__141ae {
+	top: $barheight;
+}

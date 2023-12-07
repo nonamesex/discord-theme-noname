@@ -1,0 +1,17 @@
+div.layerContainer_d5a653 div.tooltipContent__79a2d {
+	div.row__8f131 > div.size24_f4a88d {
+		.avatar__777a6 {
+			border-radius: $avatar-24px;
+		}
+
+		svg {
+			&.avatarContainerMasked__6a03e {
+				margin-right: 4px;
+			}
+
+			& > foreignObject {
+				mask: unset;
+			}
+		}
+	}
+}

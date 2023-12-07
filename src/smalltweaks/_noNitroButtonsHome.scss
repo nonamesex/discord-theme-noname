@@ -1,0 +1,6 @@
+[class^="channel_"][class*="container_"] {
+	&:has(a[href="/store"]),
+	&:has(a[href="/shop"]) {
+		display: none;
+	}
+}

@@ -1,0 +1,12 @@
+div#emoji-picker-tab-panel div.categoryList_f8c48f div.guildEmojiSectionItems_c30f77 div.categoryItem__39904 {
+	svg > foreignObject {
+		& > img {
+			border-radius: calc($guild-list-normal / 1.5);
+			transition: border-radius 150ms ease-out;
+		}
+
+		&[mask$="squircle)"] > img {
+			border-radius: calc($guild-list-selected / 1.5);
+		}
+	}
+}

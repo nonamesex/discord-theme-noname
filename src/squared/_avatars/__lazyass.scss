@@ -1,0 +1,47 @@
+$avatar-size:
+	16,
+	20,
+	24,
+	32,
+	40,
+	48,
+	56,
+	80,
+	120;
+
+$avatar-round: 
+	$avatar-16px,
+	$avatar-20px,
+	$avatar-24px,
+	$avatar-32px,
+	$avatar-40px,
+	$avatar-48px,
+	$avatar-56px,
+	$avatar-80px,
+	$avatar-120px;
+
+svg.mask__1979f > foreignObject {
+	@for $i from 1 through length($avatar-size) {
+		$size: nth($avatar-size, $i);
+		$round: nth($avatar-round, $i);
+		
+		&[width="#{$size}"][height="#{$size}"] {
+			img.avatar__991e2 {
+				border-radius: $round;
+			}
+		}
+	}
+}
+
+svg.avatarHint__8e5b9 > foreignObject {
+	@for $i from 1 through length($avatar-size) {
+		$size: nth($avatar-size, $i);
+		$px: nth($avatar-round, $i);
+		
+		&[width="#{$size}"][height="#{$size}"] {
+			div.avatarHintInner__3d1c9 {
+				border-radius: $px;
+			}
+		}
+	}
+}

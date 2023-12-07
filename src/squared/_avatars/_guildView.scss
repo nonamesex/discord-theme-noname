@@ -1,0 +1,36 @@
+div.sidebar_ded4b5 div.scrollerBase_dc3aa9 li.containerDefault__3187b div.voiceUser__0470a {
+	div.avatar_a56eee {
+		&.avatarSmall__7dc81 {
+			border-radius: $avatar-24px;
+		}
+	}
+}
+
+div.chat__52833 {
+	aside.membersWrap__90226 div.memberInner_a32223 img.avatar__991e2 {
+		border-radius: $avatar-32px;
+	}
+
+	div.noChat_ce920d.video__85ac2 {
+		div.tile_f5f57f img.avatar__991e2 {
+			border-radius: $avatar-80px;
+		}
+
+		div.upperContainer__993ba div.container__0754a {
+			img.avatar__991e2 {
+				border-radius: $avatar-24px;
+			}
+
+			div.viewers_ed7d0a div.wrapper_edb6e0.viewer__9d270 {
+				margin-left: unset;
+				-webkit-mask: unset;
+				mask: unset;
+				margin-right: 4px;
+			}
+		}
+	}
+}
+
+.container__60a4a {
+	border-radius: 3px;
+}

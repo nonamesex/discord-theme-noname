@@ -1,0 +1,11 @@
+@function lerp($value, $from, $to) {
+	@return $from + ($to - $from) * $value;
+}
+
+@function easeIn($number) {
+	@return $number * $number;
+}
+
+@function easeOut($number) {
+	@return 1 - easeIn(1 - $number);
+}

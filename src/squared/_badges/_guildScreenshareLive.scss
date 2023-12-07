@@ -1,0 +1,12 @@
+div.streamQualityIndicator__23259 {
+	.baseShapeRoundLeft__99acd {
+		border-radius: $radius 0 0 $radius;
+	}
+	div.liveIndicator__18206 {
+		border-radius: 0 $radius $radius 0 !important;
+
+		.liveShapeRoundRight__35bb2 {
+			border-radius: 0 $radius $radius 0;
+		}
+	}
+}

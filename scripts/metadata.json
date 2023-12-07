@@ -1,0 +1,55 @@
+{
+	"generic": {
+		"name": "noname",
+		"version": "1.0.0",
+		"description": "personal theme for discord",
+		"author": "nonamesex",
+		"license": "MIT",
+		"discordAuthorId": "273427587282501633",
+		"repo": "https://github.com/nonamesex/discord-theme-noname"
+	},
+	"usercss": {
+		"name": "",
+		"version": "",
+		"namespace": "",
+		"description": "",
+		"author": "",
+		"homepageURL": "",
+		"supportURL": "",
+		"updateURL": "dist/noname.user.css",
+		"license": ""
+	},
+	"betterdiscord": {
+		"name": "",
+		"author": "",
+		"description": "",
+		"version": "",
+		"invite": "",
+		"authorId": "",
+		"authorLink": "",
+		"donate": "",
+		"patreon": "",
+		"website": "",
+		"source": ""
+	},
+	"replugged": {
+		"id": "",
+		"name": "",
+		"description": "",
+		"author": {
+			"name": "",
+			"discordID": "",
+			"github": ""
+		},
+		"version": "",
+		"updater": {
+			"type": "",
+			"id": ""
+		},
+		"license": "",
+		"type": "replugged-theme",
+		"main": "src/main.css",
+		"source": "",
+		"image": []
+	}
+}

@@ -1,0 +1,36 @@
+.container_d667ff {
+	.actionButtons_b58cbb {
+		& > button:nth-child(3),
+		& > div:nth-child(4) {
+			pointer-events: none;
+			opacity: 0;
+		}
+	}
+
+	.flex_f5fbb7.horizontal__992f6.justifyStart__42744.alignStretch_e239ef.noWrap__5c413 {
+		position: absolute;
+		right: 0px;
+		bottom: 9px;
+
+		& > button {
+			width: 50px;
+			margin-right: 8px;
+			background-color: var(--background-primary);
+			color: var(--interactive-active);
+
+			&:hover {
+				background-color: var(--background-secondary);
+			}
+
+			&:nth-child(2) {
+				background-color: var(--red-900);
+				color: var(--red-260);
+
+				&:hover {
+					background-color: var(--red-500);
+					color: var(--interactive-active);
+				}
+			}
+		}
+	}
+}

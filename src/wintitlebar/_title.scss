@@ -1,0 +1,16 @@
+.wordmarkWindows__05c46 {
+	padding: 9px;
+
+	svg {
+		content-visibility: hidden;
+		display: none;
+	}
+
+	&::after {
+		content: "Discord";
+		font-family: "Segoe UI";
+		font-size: 12px;
+		font-weight: 400;
+		color: var(--text-normal);
+	}
+}

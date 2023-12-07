@@ -1,0 +1,7 @@
+[class^="banner_"] {
+	&[class*="popoutBanner_"],
+	&[class*="profileBanner_"],
+	&[class*="settingsBanner_"] {
+		background-color: initial !important;
+	}
+}

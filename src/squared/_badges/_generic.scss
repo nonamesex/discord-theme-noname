@@ -1,0 +1,16 @@
+div.listItem_fa7b36 div.wrapper__3af0b {
+	svg > defs > rect {
+		&[id$=upper_badge_masks],
+		&[id$=lower_badge_masks] {
+			rx: calc($radius * 1.6);
+			ry: calc($radius * 1.6);
+		}
+	}
+}
+
+.base__92a12.eyebrow__60985 {
+	&.baseShapeRound__95d0f,
+	&.liveShapeRound__811c0 {
+		border-radius: $radius
+	}
+}

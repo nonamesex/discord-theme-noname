@@ -1,0 +1,40 @@
+#account-status-picker--online {
+	--brand-experiment-560: var(--green-360);
+}
+
+#account-status-picker--dnd {
+	--brand-experiment-560: var(--red-400);
+}
+
+#account-status-picker--idle {
+	--brand-experiment-560: var(--yellow-330);
+}
+
+// #account-status-picker--invisible {
+// 	--brand-experiment-560: var(--primary-400);
+// }
+
+#account {
+	.submenu_acf564 {
+		min-width: unset;
+
+		.separator__18122 {
+			display: none;
+		}
+
+		.description_ea6680 {
+			display: none;
+		}
+
+		.statusItem__72404 {
+			display: grid;
+			grid-template-rows: 10px 1fr;
+			grid-template-columns: 10px 1fr;
+			padding: 11px 11px;
+
+			.status__8c19b {
+				display: none;
+			}
+		}
+	}
+}

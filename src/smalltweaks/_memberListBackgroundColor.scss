@@ -1,0 +1,28 @@
+div.members__9f47b {
+	h3.membersGroup__85843.container_de798d {
+		margin-top: 5px;
+	}
+
+	div.member_aa4760.member_b44d5d.container__4f20e {
+		&.selected__9800b::after {
+			border-radius: 4px;
+			background: white
+		}
+	
+		div.nameAndDecorators_e34d47 {
+			z-index: 0;
+		
+			span.username_d272d6.desaturateUserColors_b72bd3::after {
+				content: '';
+				top: 3px;
+				left: 2px;
+				width: 220px;
+				height: 40px;
+				position: absolute;
+				opacity: 0.1;
+				background: currentColor;
+				border-radius: 3px;
+			}
+		}
+	}
+}

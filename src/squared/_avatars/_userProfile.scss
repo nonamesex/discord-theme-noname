@@ -1,0 +1,103 @@
+div.userProfileModalInner__7c87d {
+	div.topSection_dfb73b img.avatar__991e2 {
+		border-radius: $avatar-120px;
+		border-bottom-right-radius: 24px;
+	}
+
+	&.userProfileInnerThemedWithBanner_d5f991,
+	&.userProfileInnerThemedNonPremium__3d0a6 {
+		svg > mask {
+			& > circle {
+				r: 320;
+				cx: 300;
+				fill: white;
+			}
+
+			& > rect {
+				rx: calc($avatar-120px * 1.5);
+				ry: calc($avatar-120px * 1.5);
+				width: 136px;
+				height: 136px;
+				fill: black;
+			}
+		}
+	}
+
+	&.userPanelInnerThemed__1804b,
+	&.userProfileInnerThemedWithBanner_d5f991 {
+		svg > mask {
+			& > circle {
+				cy: calc(var(--custom-user-banner-premium-banner-height-profile, 212px) / 2);
+			}
+
+			& > rect {
+				x: 14;
+				y: calc(var(--custom-user-banner-premium-banner-height-profile, 212px) - 74px);
+			}
+		}
+	}
+
+	&.userProfileInnerThemedNonPremium__3d0a6 svg > mask {
+		& > circle {
+			cy: calc(var(--custom-user-banner-banner-height-profile, 106px) / 2);
+		}
+
+		& > rect {
+			x: 14;
+			y: calc(var(--custom-user-banner-banner-height-profile, 106px) - 74px);
+		}
+	}
+}
+
+div.userPanelInner_eddf4c,
+div.userPopoutInner_f545a3 {
+	img.avatar__991e2 {
+		border-radius: $avatar-80px;
+		border-bottom-right-radius: 8px;
+	}
+
+	&.userPanelInnerThemed__1804b,
+	&.userProfileInnerThemedWithBanner_d5f991,
+	&.userProfileInnerThemedNonPremium__3d0a6 {
+		svg > mask {
+			& > circle {
+				r: 180;
+				cx: 170;
+				fill: white;
+			}
+
+			& > rect {
+				rx: calc($avatar-80px * 1.5);
+				ry: calc($avatar-80px * 1.5);
+				width: 92px;
+				height: 92px;
+				fill: black;
+			}
+		}
+	}
+
+	&.userPanelInnerThemed__1804b,
+	&.userProfileInnerThemedWithBanner_d5f991 {
+		svg > mask {
+			& > circle {
+				cy: calc(var(--custom-user-banner-premium-banner-height-popout, 120px) / 2);
+			}
+
+			& > rect {
+				x: 12;
+				y: calc(var(--custom-user-banner-premium-banner-height-popout, 120px) - 54px);
+			}
+		}
+	}
+
+	&.userProfileInnerThemedNonPremium__3d0a6 svg > mask {
+		& > circle {
+			cy: calc(var(--custom-user-banner-banner-height-popout, 60px) / 2);
+		}
+
+		& > rect {
+			x: 16;
+			y: calc(var(--custom-user-banner-banner-height-popout, 60px) - 50px);
+		}
+	}
+}

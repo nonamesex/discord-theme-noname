@@ -1,0 +1,23 @@
+div.userPanelOuter__880e5,
+div.userPopoutOuter_d739b2,
+div.userProfileModalOuter__3fe6b {
+	&.userProfileOuter__46bb7,
+	&.userProfileOuterThemed__6eb84 {
+		&.profileColors__2e2f0 {
+			&.theme-light,
+			&.theme-dark {
+				--profile-gradient-primary-color: var(--background-secondary) !important;
+				--profile-gradient-secondary-color: var(--background-secondary-alt) !important;
+				--profile-gradient-overlay-color: rgb(0 0 0 / 0%) !important;
+				--profile-gradient-button-color: var(--button-secondary-background) !important;
+				--profile-avatar-border-color: var(--background-secondary-alt) !important;
+				--profile-message-input-border-color: var(--background-modifier-accent) !important;
+				--profile-body-background-color: var(--background-floating) !important;
+				--profile-body-background-hover: var(--background-modifier-hover) !important;
+				--profile-body-divider-color: var(--background-modifier-accent) !important;
+				--profile-role-pill-background-color: var(--background-secondary-alt) !important;
+				--profile-role-pill-border-color: var(--background-secondary) !important;
+			}
+		}
+	}
+}

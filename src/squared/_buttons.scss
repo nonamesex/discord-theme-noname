@@ -1,0 +1,32 @@
+div#app-mount > svg > mask {
+	&[id^=svg-mask-channel-call-control-button] {
+		& > circle[fill="white"] {
+			r: 1;
+		}
+	}
+}
+
+.button__908fa {
+	border-radius: 4px;
+}
+
+.centerButton__3205b {
+	padding: 12px 12px;
+	border-radius: 6px;
+}
+
+.controlButton_ab2899 > svg > foreignObject > div {
+	padding: 4px 0px;
+}
+
+.status__42e87 {
+	border-radius: 4px;
+}
+
+.participantsButton__56586 {
+	border-radius: 4px;
+}
+
+.pencilContainer_d4ce8d {
+	border-radius: 4px;
+}
