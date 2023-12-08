@@ -1,7 +1,8 @@
-[class^="banner_"] {
-	&[class*="popoutBanner_"],
-	&[class*="profileBanner_"],
-	&[class*="settingsBanner_"] {
+div.banner__6d414 {
+	&.panelBanner__90b8a,
+	&.popoutBanner__9f5b9,
+	&.profileBanner__8414b,
+	&.settingsBanner__8c4ee {
 		background-color: initial !important;
 	}
 }
