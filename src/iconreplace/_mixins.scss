@@ -1,0 +1,48 @@
+@mixin replacePath($source, $new) {
+	svg[role=img] > path[d="#{$source}"] {
+		d: path($new)
+	}
+}
+
+@mixin replacePath2($source1, $source2, $new) {
+	svg[role=img]:has(path[d="#{$source1}"]):has(path[d="#{$source2}"]) > path {
+		&:nth-child(1) {
+			display: unset;
+		}
+		d: path($new);
+		display: none;
+	}
+}
+
+@mixin replacePath3($source1, $source2, $source3, $new) {
+	svg[role=img]:has(path[d="#{$source1}"]):has(path[d="#{$source2}"]):has(path[d="#{$source3}"]) > path {
+		&:nth-child(1) {
+			display: unset;
+		}
+		d: path($new);
+		display: none;
+	}
+}
+
+@mixin replacePathCircle($source, $new) {
+	svg[role=img]:has(circle):has(path[d="#{$source}"]) {
+		> circle {
+			display: none;
+		}
+		> path {
+			d: path($new)
+		}
+	}
+}
+
+@mixin replacePathWithBadge($source1, $source2, $new, $color) {
+	svg[role=img]:has(path[d="#{$source1}"]):has(path[d="#{$source2}"]) > path {
+		&:nth-child(1) {
+			fill: $color
+		}
+		&:nth-child(2) {
+			d: path($new);
+			mix-blend-mode: color-dodge;
+		}
+	}
+}
