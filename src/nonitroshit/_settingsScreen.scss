@@ -1,11 +1,10 @@
 .side_b4b3f6 {
-	&>:nth-child(11),
-	&>:nth-child(12),
-	&>:nth-child(13),
-	&>:nth-child(14),
-	&>:nth-child(15),
-	&>:nth-child(16),
-	&>:nth-child(17),
+	@for $i from 11 through 17 {
+		& > :nth-child(#{$i}) {
+			display: none;
+		}
+	}
+
 	.socialLinks_c1fc99 {
 		display: none;
 	}

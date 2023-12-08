@@ -1,0 +1,6 @@
+li.channel_c21703.container__8759a {
+	&:has(a[href="/shop"]),
+	&:has(a[href="/store"]) {
+		display: none;
+	}
+}
