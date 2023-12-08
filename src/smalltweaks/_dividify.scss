@@ -1,0 +1,122 @@
+$background-color-left: var(--background-secondary);
+$background-color-center: var(--background-primary);
+$border-radius: 4px;
+$ident: 6px;
+
+.sidebar_ded4b5 {
+	background-color: var(--background-tertiary);
+}
+
+.theme-dark .container__590e2 {
+	background-color: $background-color-left;
+	margin: 0px calc($ident / 2) calc($ident / 2) 0px;
+	border-radius: $border-radius;
+}
+
+// .panels__58331 {
+// 	background-color: $background-color-left;
+// 	margin: calc($ident / 2) calc($ident / 2) $ident 0px;
+// 	border-radius: $border-radius;
+// }
+
+.panels__58331 {
+	background-color: unset;
+}
+
+.panel_bd8c76.activityPanel__22355 {
+	background-color: $background-color-left !important;
+	margin: calc($ident / 2) calc($ident / 2) $ident 0px;
+	border-radius: $border-radius;
+	border-bottom: unset;
+}
+
+.panels__58331 .wrapper__0ed4a:has(*) {
+	background-color: $background-color-left !important;
+	margin: calc($ident / 2) calc($ident / 2) $ident 0px;
+	border-radius: $border-radius;
+
+	> div {
+		border-bottom: unset;
+	}
+}
+
+.container_ca50b9 {
+	background-color: $background-color-left !important;
+	margin: calc($ident / 2) calc($ident / 2) $ident 0px;
+	border-radius: $border-radius;
+	border-bottom: unset;
+}
+
+.container_d667ff {
+	background-color: unset;
+//	border-bottom: unset;
+}
+
+.theme-dark .container_ca50b9 {
+	background-color: unset;
+}
+
+.panel_bd8c76.activityPanel__22355 {
+	background-color: unset;
+//	border-bottom: unset;
+}
+
+.privateChannels__93473 {
+	background-color: $background-color-left;
+	margin: 0px calc($ident / 2) calc($ident / 2) 0px;
+	border-radius: $border-radius;
+}
+
+.scroller__4b984.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0 {
+	background-color: unset;
+}
+
+.chat__52833 {
+	background-color: unset;
+	margin-bottom: $ident;
+	padding-bottom: calc($ident / 2);
+}
+
+.chat__52833:has(.wrapper_bd2abe.noChat_ce920d.video__85ac2) {
+	padding-bottom: unset;
+	margin: 0px $ident $ident calc($ident / 2);
+	border-radius: $border-radius;
+}
+
+// Forum shit
+.container_b181b6 {
+	border-radius: $border-radius;
+}
+.container__8ee50 {
+	background-color: unset;
+}
+
+.content__1a4fe:before {
+	display: none;
+}
+
+.container__93316 {
+	margin: calc($ident / 2) calc($ident / 2) 0px calc($ident / 2);
+	border-radius: $border-radius;
+	background-color: $background-color-center;
+}
+
+.chatContent__5dca8 {
+	background-color: unset;
+}
+
+section.title_b7d661.container__11d72.themed_b152d4 {
+	margin: 0px $ident calc($ident / 2) calc($ident / 2);
+	border-radius: $border-radius;
+	width: calc(100% - calc($ident / 2) - $ident);
+}
+
+.container_b2ce9c {
+	margin: calc($ident / 2) $ident calc($ident / 2) calc($ident / 2);
+	border-radius: $border-radius;
+	background-color: $background-color-left;
+}
+
+.members__9f47b.thin_b1c063.scrollerBase_dc3aa9.fade_ba0fa0.customTheme_db4d28 {
+	background-color: unset;
+}
