@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../../wintitlebar/variables";
+
+.winButton__88672 {
+	margin: $ident $ident $ident 0px;
+	width: calc($btnwidth - $ident);
+	height: calc($barheight - $ident);
+	border-radius: $border-radius;
+}
