@@ -1,16 +1,14 @@
-.theme-dark .container__590e2 {
-	background-color: unset;
-	border-radius: $border-radius;
+.theme-light, .theme-dark {
+	.container__590e2 {
+		background-color: unset;
+		border-radius: $border-radius;
+	}
 }
 
 .container__7c79d.clickable__2d589 {
 	margin: 0px calc($ident / 2) calc($ident / 2) 0px;
 	background-color: $background-color-left;
 	border-radius: $border-radius;
-}
-
-.theme-dark .container__590e2 {
-	background-color: unset;
 }
 
 .header__104ca {

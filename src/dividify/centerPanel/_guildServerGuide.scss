@@ -1,0 +1,19 @@
+.chat__52833.background_cb0a80 {
+	section.title__7f0f1.background_cb0a80.forumOrHome__75784.container__11d72.themed_b152d4 {
+		margin: 0px 0px calc($ident / 2) calc($ident / 2);
+		border-radius: $border-radius;
+		width: calc(100% - calc($ident / 2) - $ident);
+		background-color: $background-color-left;
+	}
+
+	.auto_a48086.scrollerBase_dc3aa9 {
+		background-color: $background-color-left;
+		margin: calc($ident / 2) $ident calc($ident / 2 * -1) calc($ident / 2);
+		padding-top: 16px;
+		border-radius: $border-radius;
+		
+		.homeContainer_a4aa0a {
+			padding-bottom: 16px;
+		}
+	}
+}
