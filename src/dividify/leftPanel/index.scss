@@ -1,7 +1,8 @@
+@import "dmChannelsList";
 @import "guildChannelsList";
-@import "privateChannelsList";
 @import "userArea";
 
 .sidebar_ded4b5 {
+	width: calc(240px + $ident / 2);
 	background-color: var(--background-tertiary);
 }

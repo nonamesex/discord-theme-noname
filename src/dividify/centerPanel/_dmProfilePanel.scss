@@ -1,0 +1,11 @@
+aside.profilePanel__12596 {
+	margin: calc($ident / 2) $ident calc($ident / 2 * -1) 0px;
+
+	> div {
+		border-radius: $border-radius;
+
+		> div {
+			border-radius: $border-radius;
+		}
+	}
+}

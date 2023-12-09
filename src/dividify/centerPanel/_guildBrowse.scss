@@ -1,0 +1,18 @@
+div.chat__52833 {
+	section.header__60bef.container__11d72.themed_b152d4 {
+		margin: 0px $ident calc($ident / 2) calc($ident / 2);
+		border-radius: $border-radius;
+		width: calc(100% - calc($ident / 2) - $ident);
+		background-color: $background-color-center;
+	}
+
+	.content__1a4fe.container__10dc7 {
+		border-radius: $border-radius;
+		margin: calc($ident / 2) $ident calc($ident / 2 * -1) calc($ident / 2);
+		background-color: $background-color-center;
+	
+		.chat__52833.container__7590f {
+			background-color: unset;
+		}
+	}
+}
