@@ -1,0 +1,36 @@
+main.container__5c7e7 {
+	background-color: unset;
+
+	section.container__11d72.themed_b152d4 {
+		margin: 0px $ident calc($ident / 2) calc($ident / 2);
+		width: calc(100% - calc($ident / 2) - $ident);
+		border-radius: $border-radius;
+		background-color: $background-color-center;
+	}
+
+	div#online-tab {
+		background-color: $background-color-center;
+		border-radius: $border-radius;
+		margin: calc($ident / 2) calc($ident / 2) $ident calc($ident / 2);
+	}
+
+	.tabBody_b3d268 {
+		&:before {
+			display: none;
+		}
+
+		.nowPlayingColumn_f5023f {
+			margin: calc($ident / 2) $ident $ident calc($ident / 2);
+			background-color: $background-color-left;
+			border-radius: $border-radius;
+
+			aside.container__0a6a9 {
+				background-color: unset;
+
+				.scroller__00e7e.thin_b1c063.scrollerBase_dc3aa9 {
+					border-left: unset;
+				}
+			}
+		}
+	}
+}
