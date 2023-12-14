@@ -13,7 +13,7 @@
 	margin-bottom: $ident;
 	padding-bottom: calc($ident / 2);
 
-	&:has(.wrapper_bd2abe.noChat_ce920d.video__85ac2) {
+	&:has(.callContainer_cbde45) {
 		padding-bottom: unset;
 		margin: 0px $ident $ident calc($ident / 2);
 		border-radius: $border-radius;
