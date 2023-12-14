@@ -1,31 +1,13 @@
 .container__93316 {
 	margin: calc($ident / 2) $ident 0px calc($ident / 2);
 	border-radius: $border-radius;
-	background-color: unset;
+	background-color: $background-color-center;
 
 	.chatContent__5dca8 {
 		background-color: unset;
 
-		.messagesWrapper_ea2b0b .scroller__1f96e {
-			background-color: var(--background-primary);
-			border-radius: $border-radius;
-			margin-bottom: calc($ident / 2);
-	
-			.scrollerSpacer__9cd32 {
-				height: 14px;
-			}
-		}
-
-		.form__13a2c {
-			margin-top: unset;
-			background-color: $background-color-center;
-			border-radius: $border-radius;
-			margin-top: calc($ident / 2);
-	
-			.channelTextArea__2e60f,
-			.wrapper_fbbb73 {
-				margin-top: 16px;
-			}
+		.form__13a2c:before {
+			top: 1px;
 		}
 	}
 }
