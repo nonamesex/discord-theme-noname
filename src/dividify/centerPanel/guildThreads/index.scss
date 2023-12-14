@@ -1,10 +1,16 @@
 @import "postMembers";
 
-.chatContainer__23434 {
-	.container_b181b6 {
-		border-radius: $border-radius;
+.chat__52833 {
+	.title_b7d661.forumOrHome__75784 {
+		background-color: $background-color-left;
 	}
-	.messagesWrapper_ea2b0b .container__8ee50 {
-		background-color: unset;
+
+	.chatContainer__23434 {
+		.container_b181b6 {
+			border-radius: $border-radius;
+		}
+		.messagesWrapper_ea2b0b .container__8ee50 {
+			background-color: unset;
+		}
 	}
 }

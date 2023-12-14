@@ -5,27 +5,27 @@
 
 	.chatContent__5dca8 {
 		background-color: unset;
-	}
 
-	.scroller__1f96e.customTheme_db4d28.auto_a48086.scrollerBase_dc3aa9.disableScrollAnchor_e73c0f.managedReactiveScroller__79923 {
-		background-color: var(--background-primary);
-		border-radius: $border-radius;
-		margin-bottom: calc($ident / 2);
-
-		.scrollerSpacer__9cd32 {
-			height: 14px;
+		.messagesWrapper_ea2b0b .scroller__1f96e {
+			background-color: var(--background-primary);
+			border-radius: $border-radius;
+			margin-bottom: calc($ident / 2);
+	
+			.scrollerSpacer__9cd32 {
+				height: 14px;
+			}
 		}
-	}
 
-	.form__13a2c {
-		margin-top: unset;
-		background-color: $background-color-center;
-		border-radius: $border-radius;
-		margin-top: calc($ident / 2);
-
-		.channelTextArea__2e60f,
-		.wrapper_fbbb73 {
-			margin-top: 16px;
+		.form__13a2c {
+			margin-top: unset;
+			background-color: $background-color-center;
+			border-radius: $border-radius;
+			margin-top: calc($ident / 2);
+	
+			.channelTextArea__2e60f,
+			.wrapper_fbbb73 {
+				margin-top: 16px;
+			}
 		}
 	}
 }

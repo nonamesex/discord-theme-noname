@@ -1,9 +1,12 @@
-section.title_b7d661.container__11d72.themed_b152d4 {
-	margin: 0px $ident calc($ident / 2) calc($ident / 2);
-	border-radius: $border-radius;
-	width: calc(100% - calc($ident / 2) - $ident);
-}
+.chat__52833 {
+	.title_b7d661 {
+		background-color: $background-color-center;
+		margin: 0px $ident calc($ident / 2) calc($ident / 2);
+		border-radius: $border-radius;
+		width: calc(100% - calc($ident / 2) - $ident);
+	}
 
-.content__1a4fe:before {
-	display: none;
+	.content__1a4fe:before {
+		display: none;
+	}
 }
