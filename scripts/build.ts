@@ -45,6 +45,11 @@ const buildScss = async () => {
 			verbose: true,
 			charset: true,
 			style: flagProd ? "compressed" : "expanded",
+			functions: {
+				"encodeBase64($string)": (args) => new sass.SassString(
+					Buffer.from(args[0].assertString("string").text).toString('base64')
+				)
+			}
 		})
 		console.log(`[${Date.now() - buildStart}ms] CSS compiled`);
 

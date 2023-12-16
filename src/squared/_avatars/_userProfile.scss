@@ -1,103 +1,77 @@
+@use 'sass:math';
+
+@function getBannerMask(
+	$bannerW, $bannerH,
+	$avatarW, $avatarH,
+	$avatarX, $avatarY,
+	$avatarRound
+) {
+	@return url('data:image/svg+xml;base64,' + encodeBase64(
+		'<svg width="#{$bannerW}" height="#{$bannerH}" viewBox="0 0 #{$bannerW} #{$bannerH}" xmlns="http://www.w3.org/2000/svg">'
+		+ '<defs><filter id="invert-alpha"><feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 -1 1"/></filter></defs><g filter="url(#invert-alpha)">'
+		+ '<rect fill="transparent" x="0" y="0" width="100%" height="100%"></rect>'
+		+ '<rect fill="black" rx="#{$avatarRound}" ry="#{$avatarRound}" x="#{$avatarX}" y="#{$avatarY}" width="#{$avatarW}" height="#{$avatarH}"></rect>'
+		+ '</g></svg>'
+	));
+}
+
 div.userProfileModalInner__7c87d {
-	div.topSection_dfb73b img.avatar__991e2 {
+	div.header__7da4f div.avatarStack__6604a img.avatar__991e2 {
 		border-radius: $avatar-120px;
-		border-bottom-right-radius: 24px;
+		border-bottom-right-radius: math.max(24px, $avatar-120px);
 	}
 
-	&.userProfileInnerThemedWithBanner_d5f991,
 	&.userProfileInnerThemedNonPremium__3d0a6 {
-		svg > mask {
-			& > circle {
-				r: 320;
-				cx: 300;
-				fill: white;
-			}
-
-			& > rect {
-				rx: calc($avatar-120px * 1.5);
-				ry: calc($avatar-120px * 1.5);
-				width: 136px;
-				height: 136px;
-				fill: black;
-			}
+		svg.bannerSVGWrapper__3e7b0 foreignObject {
+			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($avatar-120px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
 		}
 	}
 
-	&.userPanelInnerThemed__1804b,
 	&.userProfileInnerThemedWithBanner_d5f991 {
-		svg > mask {
-			& > circle {
-				cy: calc(var(--custom-user-banner-premium-banner-height-profile, 212px) / 2);
-			}
-
-			& > rect {
-				x: 14;
-				y: calc(var(--custom-user-banner-premium-banner-height-profile, 212px) - 74px);
-			}
-		}
-	}
-
-	&.userProfileInnerThemedNonPremium__3d0a6 svg > mask {
-		& > circle {
-			cy: calc(var(--custom-user-banner-banner-height-profile, 106px) / 2);
-		}
-
-		& > rect {
-			x: 14;
-			y: calc(var(--custom-user-banner-banner-height-profile, 106px) - 74px);
+		svg.bannerSVGWrapper__3e7b0 foreignObject {
+			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 14px, 138px, calc($avatar-120px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
 		}
 	}
 }
 
-div.userPanelInner_eddf4c,
 div.userPopoutInner_f545a3 {
-	img.avatar__991e2 {
+	div.avatarWrapper_f77579 div.avatarStack__6604a img.avatar__991e2 {
 		border-radius: $avatar-80px;
-		border-bottom-right-radius: 8px;
+		border-bottom-right-radius: math.max(24px, $avatar-80px);
 	}
 
-	&.userPanelInnerThemed__1804b,
-	&.userProfileInnerThemedWithBanner_d5f991,
 	&.userProfileInnerThemedNonPremium__3d0a6 {
-		svg > mask {
-			& > circle {
-				r: 180;
-				cx: 170;
-				fill: white;
-			}
-
-			& > rect {
-				rx: calc($avatar-80px * 1.5);
-				ry: calc($avatar-80px * 1.5);
-				width: 92px;
-				height: 92px;
-				fill: black;
-			}
+		svg.bannerSVGWrapper__3e7b0 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 16px, 10px, calc($avatar-80px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
 		}
 	}
 
-	&.userPanelInnerThemed__1804b,
 	&.userProfileInnerThemedWithBanner_d5f991 {
-		svg > mask {
-			& > circle {
-				cy: calc(var(--custom-user-banner-premium-banner-height-popout, 120px) / 2);
-			}
-
-			& > rect {
-				x: 12;
-				y: calc(var(--custom-user-banner-premium-banner-height-popout, 120px) - 54px);
-			}
+		svg.bannerSVGWrapper__3e7b0 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($avatar-80px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
 		}
 	}
+}
 
-	&.userProfileInnerThemedNonPremium__3d0a6 svg > mask {
-		& > circle {
-			cy: calc(var(--custom-user-banner-banner-height-popout, 60px) / 2);
-		}
+div.userPanelInner_eddf4c {
+	div.avatarWrapper_f77579 div.avatarStack__6604a img.avatar__991e2 {
+		border-radius: $avatar-80px;
+		border-bottom-right-radius: math.max(24px, $avatar-80px);
+	}
 
-		& > rect {
-			x: 16;
-			y: calc(var(--custom-user-banner-banner-height-popout, 60px) - 50px);
+	&.userPanelInnerThemed__1804b {
+		svg.bannerSVGWrapper__3e7b0 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($avatar-80px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
 		}
 	}
 }
