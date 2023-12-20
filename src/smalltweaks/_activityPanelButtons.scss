@@ -1,9 +1,10 @@
 .container_d667ff {
 	.actionButtons_b58cbb {
+		grid-template-columns: repeat(4, 50px);
+
 		& > button:nth-child(3),
 		& > div:nth-child(4) {
-			pointer-events: none;
-			opacity: 0;
+			display: none;
 		}
 	}
 
