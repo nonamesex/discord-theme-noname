@@ -1,0 +1,60 @@
+.messagesWrapper_ea2b0b {
+	.barBase__4e0ba {
+		&.newMessagesBar__8b6d7 {
+			border-radius: unset;
+			background: none;
+			box-shadow: none;
+			height: 48px;
+			justify-content: center;
+			width: fit-content;
+			left: 50%;
+    		transform: translateX(-50%);
+
+			button.barButtonBase__8fa46 {
+				height: 32px;
+
+				&.barButtonMain__0f5c6 {
+					flex: unset;
+					background-color: var(--primary-400);
+					border-radius: 4px 0px 0px 4px;
+
+					.span_a7874a {
+						display: none;
+					}
+
+					&:after {
+						content: "Scroll To Unread";
+					}
+				}
+
+				&.barButtonAlt__4b48f {
+					background-color: var(--brand-experiment);
+					border-radius: 0px 4px 4px 0px;
+				}
+			}
+		}
+
+		&.jumpToPresentBar__0ff7f {
+			border-radius: unset;
+			background: none;
+			height: 48px;
+			justify-content: center;
+			width: fit-content;
+			left: 50%;
+    		transform: translateX(-50%);
+
+			button.barButtonBase__8fa46 {
+				height: 32px;
+
+				&.barButtonMain__0f5c6 {
+					display: none;
+				}
+
+				&.barButtonAlt__4b48f {
+					background-color: var(--brand-experiment);
+					border-radius: 4px;
+				}
+			}
+		}
+	}
+}
