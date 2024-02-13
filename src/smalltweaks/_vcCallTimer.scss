@@ -14,8 +14,13 @@ section.panels__58331 div.inner_ab95dc:has(.text-xs-normal__56c35.subtext__8f869
 
 	& > div {
 		&:has(div.rtcConnectionStatus__40882):has(button.rtcConnectionStatusConnected__1d5b0) {
-			button.rtcConnectionStatusConnected__1d5b0 {
-				opacity: 0;
+			div.labelWrapper_a0c350 {
+				button.rtcConnectionStatusConnected__1d5b0 {
+					opacity: 0;
+					width: 100%;
+				}
+
+				width: 100%;
 			}
 			.text-xs-normal__56c35.subtext__8f869.channel_d7d412 > p {
 				display: block;
