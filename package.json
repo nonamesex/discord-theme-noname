@@ -14,6 +14,7 @@
   "scripts": {
     "build": "tsx scripts/build.ts --prod",
     "build-vc": "tsx scripts/build.ts --prod --mod-vc",
-    "watch-vc": "tsx scripts/build.ts --watch --mod-vc"
+    "watch-vc": "tsx scripts/build.ts --watch --mod-vc",
+    "build-usercss": "tsx scripts/build.ts --prod --usercss"
   }
 }

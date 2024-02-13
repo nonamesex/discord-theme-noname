@@ -14,6 +14,7 @@ const flagWatch: boolean = process.argv.includes("--watch");
 const flagVencord: boolean = process.argv.includes("--mod-vc");
 const flagReplugged: boolean = process.argv.includes("--mod-rp");
 const flagBetterDiscord: boolean = process.argv.includes("--mod-bd");
+const flagUserStyle: boolean = process.argv.includes("--usercss");
 
 let buildTimeout: NodeJS.Timeout;
 let buildInProcess: boolean = false;
@@ -43,7 +44,7 @@ const compileScss = async (scssPath) => {
 
 const saveSassCompileResult = (result: sass.CompileResult, filePath: string, fileName: string) => {
 	if (result.css) {
-		let meta = getMetaData().betterdiscord;
+		let meta = fileName.endsWith("user.css") ? getMetaData().usercss : getMetaData().betterdiscord;
 		if (result.sourceMap) {
 			fs.writeFileSync(path.join(filePath, fileName), `${meta}\n${result.css}\n/*# sourceMappingURL=${fileName}.map */\n`);
 			fs.writeFileSync(path.join(filePath, `${fileName}.map`), JSON.stringify(result.sourceMap))
@@ -70,6 +71,10 @@ const buildScss = async () => {
 	
 		if (flagVencord) {
 			saveSassCompileResult(result, path.join(VENCORD_CONFIG_PATH, "themes"), "noname.theme.css");
+		}
+
+		if (flagUserStyle) {
+			saveSassCompileResult(result, distPath, "noname.user.css");
 		}
 
 		const splash = path.join(srcPath, "splash.scss");
