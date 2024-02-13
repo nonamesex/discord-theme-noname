@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
+    "mime": "^4.0.1",
     "sass-embedded": "^1.69.5",
     "tsx": "^3.14.0",
     "typescript": "^5.2.2"

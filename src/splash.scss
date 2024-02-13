@@ -1,0 +1,102 @@
+@forward "fontreplace/UniformProCon";
+
+@keyframes blah {
+	0% {
+		left: 10px;
+		width: 0px;
+	}
+	25% {
+		left: 10px;
+		width: 180px;
+	}
+	50% {
+		left: 190px;
+		width: 0px;
+	}
+	100% {
+		left: 10px;
+		width: 0px;
+	}
+}
+
+$font-primary: "Uniform Pro Condensed", "Bahnschrift Condensed", "gg sans", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+div#splash-mount #splash {
+	background: insertFile("./src/splash/background.png");
+	background-color: hsl(228 4.66875% 6.125%); // primary-700
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: lighten;
+
+	.splash-inner .splash-text {
+		& > span {
+			font-family: $font-primary;
+		}
+
+		.progress {
+			$bar-rounding: 2px;
+
+			.progress-bar {
+				border-radius: $bar-rounding;
+				background-color: hsl(228 4.5% 17.5%); // primary-500
+
+				&:before {
+					content: "";
+					height: 8px;
+					width: 20px;
+					display: block;
+					position: absolute;
+					animation: blah 0.9s linear infinite;
+					background: linear-gradient(90deg, transparent, white, transparent);
+					opacity: 0.1;
+				}
+
+				.complete {
+					border-radius: $bar-rounding;
+					box-shadow: none;
+					background-color: hsl(228 4.6037109375% 47.40625%); // primary-400
+				}
+			}
+		}
+	}
+
+	.splash-inner-dl {
+		.dl-update-message,
+		.dl-version-message {
+			font-family: $font-primary;
+		}
+
+		.dl-select-frame {
+			font-family: $font-primary;
+
+			.Select .Select-menu-outer {
+				border-radius: 4px;
+				margin-top: 4px;
+
+				.Select-option {
+					&:first-child {
+						border-top-right-radius: 3px;
+						border-top-left-radius: 3px;
+					}
+
+					&.is-focused {
+						background-color: hsl(215.5555555556 53.7848605578% 49.2156862745%); // brand-500
+					}
+				}
+			}
+
+			.dl-button {
+				background-color: hsl(215.5555555556 53.7848605578% 49.2156862745%); // brand-500
+
+				&:hover {
+					background-color: hsl(215.4782608696deg 52.036199095% 43.3333333333%); // brand-560
+				}
+
+				&:active {
+					background-color: hsl(215.421686747deg 48.5380116959% 33.5294117647%); // brand-600
+				}
+			}
+		}
+	}
+}
