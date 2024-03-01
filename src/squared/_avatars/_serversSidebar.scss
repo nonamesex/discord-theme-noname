@@ -6,6 +6,7 @@ div.listItem_fa7b36 {
 	div.wrapper__3af0b > svg {
 		border-radius: $guild-list-normal;
 		transition: border-radius 150ms ease-out;
+		background-color: var(--background-secondary);
 
 		&:has(.selected_f5ec8e) {
 			border-radius: $guild-list-selected;
@@ -13,10 +14,6 @@ div.listItem_fa7b36 {
 
 		& > defs > path {
 			d: path("M 0,0 H 48 V 48 H 0 Z");
-		}
-
-		img.icon__0cbed {
-			background-color: var(--background-secondary);
 		}
 
 		div.folderIconWrapper__72239 {

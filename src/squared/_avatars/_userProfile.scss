@@ -29,6 +29,14 @@ div.userProfileModalInner__7c87d {
 		}
 	}
 
+	&.userProfileInnerThemedPremiumWithoutBanner__703b1 {
+		svg.bannerSVGWrapper__3e7b0 foreignObject {
+			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($avatar-120px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
+		}
+	}
+
 	&.userProfileInnerThemedWithBanner_d5f991 {
 		svg.bannerSVGWrapper__3e7b0 foreignObject {
 			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 14px, 138px, calc($avatar-120px * 1.5))};
@@ -47,6 +55,14 @@ div.userPopoutInner_f545a3 {
 	&.userProfileInnerThemedNonPremium__3d0a6 {
 		svg.bannerSVGWrapper__3e7b0 foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 16px, 10px, calc($avatar-80px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
+		}
+	}
+
+	&.userProfileInnerThemedPremiumWithoutBanner__703b1 {
+		svg.bannerSVGWrapper__8a38c foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 36px, calc($avatar-80px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
