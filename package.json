@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
+    "chokidar": "^3.6.0",
     "mime": "^4.0.1",
     "sass-embedded": "^1.69.5",
     "tsx": "^3.14.0",
@@ -13,8 +14,6 @@
   },
   "scripts": {
     "build": "tsx scripts/build.ts --prod",
-    "build-vc": "tsx scripts/build.ts --prod --mod-vc",
     "watch-vc": "tsx scripts/build.ts --watch --mod-vc",
-    "build-usercss": "tsx scripts/build.ts --prod --usercss"
   }
 }

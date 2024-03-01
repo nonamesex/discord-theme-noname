@@ -17,7 +17,7 @@ const getUserConfig = () => {
 export const REPLUGGED_CONFIG_PATH = path.join(getUserConfig(), "replugged")
 export const VENCORD_CONFIG_PATH = (() => {
 	// https://github.com/ProtonMail/go-appdir
-	// https://github.com/Vencord/Installer/blob/main/patcher.go#L31
+	// https://github.com/Vencord/Installer/blob/main/patcher.go#L24
 	if (process.env.VENCORD_USER_DATA_DIR) {
 		return process.env.VENCORD_USER_DATA_DIR;
 	} else if (process.env.DISCORD_USER_DATA_DIR) {

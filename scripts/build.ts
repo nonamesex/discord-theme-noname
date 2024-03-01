@@ -4,6 +4,7 @@ import { VENCORD_CONFIG_PATH } from "./build_utils";
 import * as path from "path";
 import { getMetaData } from "./metadata.ts";
 import mime from "mime";
+import chokidar from "chokidar";
 
 const cwd = process.cwd();
 const distPath = path.join(cwd, "dist");
@@ -14,7 +15,6 @@ const flagWatch: boolean = process.argv.includes("--watch");
 const flagVencord: boolean = process.argv.includes("--mod-vc");
 const flagReplugged: boolean = process.argv.includes("--mod-rp");
 const flagBetterDiscord: boolean = process.argv.includes("--mod-bd");
-const flagUserStyle: boolean = process.argv.includes("--usercss");
 
 let buildTimeout: NodeJS.Timeout;
 let buildInProcess: boolean = false;
@@ -34,7 +34,7 @@ const compileScss = async (scssPath) => {
 			"insertFile($path)": (args) => {
 				const relPath = args[0].assertString("string").text;
 				const data = fs.readFileSync(path.join(cwd, relPath), { encoding: "base64" });
-				return new sass.SassString(`url("data:${mime.getType(relPath)};base64,${data}")`, {quotes: false});
+				return new sass.SassString(`url("data:${mime.getType(relPath)};base64,${data}")`, { quotes: false });
 			}
 		}
 	});
@@ -42,17 +42,34 @@ const compileScss = async (scssPath) => {
 	return result;
 }
 
-const saveSassCompileResult = (result: sass.CompileResult, filePath: string, fileName: string) => {
-	if (result.css) {
-		let meta = fileName.endsWith("user.css") ? getMetaData().usercss : getMetaData().betterdiscord;
-		if (result.sourceMap) {
-			fs.writeFileSync(path.join(filePath, fileName), `${meta}\n${result.css}\n/*# sourceMappingURL=${fileName}.map */\n`);
-			fs.writeFileSync(path.join(filePath, `${fileName}.map`), JSON.stringify(result.sourceMap))
-		} else {
-			fs.writeFileSync(path.join(filePath, fileName), `${meta}\n${result.css}`);
-		}
-		console.log(`[${Date.now() - buildStart}ms] ${fileName} saved to ${filePath}`);
+const saveSassCompileResult = (result: sass.CompileResult, filePath: string, fileName: string, metaType?: "usercss" | "betterdiscord" | "replugged") => {
+	const metaData = getMetaData();
+	const resultFilePath = path.join(filePath, fileName);
+
+	if (!fs.existsSync(filePath)) {
+		fs.mkdirSync(filePath);
 	}
+
+	const fileDescriptor = fs.openSync(resultFilePath, "w");
+
+	if (metaType) {
+		if (metaType == "replugged") {
+			fs.writeFileSync(path.join(filePath, "manifest.json"), `${metaData[metaType]}\n`);
+		} else {
+			fs.writeFileSync(fileDescriptor, `${metaData[metaType]}\n`);
+		}
+	}
+
+	fs.writeFileSync(fileDescriptor, `${result.css}\n`);
+
+	if (result.sourceMap) {
+		fs.writeFileSync(fileDescriptor, `/*# sourceMappingURL=file:///${resultFilePath}.map */\n`);
+		fs.writeFileSync(resultFilePath + ".map", JSON.stringify(result.sourceMap));
+	}
+
+	fs.closeSync(fileDescriptor);
+
+	console.log(`[${Date.now() - buildStart}ms] ${fileName} saved to ${filePath}`);
 }
 
 const buildScss = async () => {
@@ -67,20 +84,28 @@ const buildScss = async () => {
 		if (!fs.existsSync(distPath)) fs.mkdirSync(distPath, { recursive: true });
 
 		const result = await compileScss(path.join(srcPath, "index.scss"));
-		saveSassCompileResult(result, distPath, "main.css");
-	
-		if (flagVencord) {
-			saveSassCompileResult(result, path.join(VENCORD_CONFIG_PATH, "themes"), "noname.theme.css");
-		}
 
-		if (flagUserStyle) {
-			saveSassCompileResult(result, distPath, "noname.user.css");
-		}
+		const metaData = getMetaData();
 
-		const splash = path.join(srcPath, "splash.scss");
-		if (fs.existsSync(splash)) {
-			const result = await compileScss(splash);
-			saveSassCompileResult(result, distPath, "splash.css");
+		if (flagProd) {
+			let fileName = metaData.generic.name + ".theme.css";
+			saveSassCompileResult(result, distPath, fileName, "betterdiscord");
+
+			fileName = metaData.generic.name + ".user.css";
+			saveSassCompileResult(result, distPath, fileName, "usercss");
+
+			let filePath = path.join(distPath, `dev.${metaData.generic.author}.${metaData.generic.name}/`);
+			saveSassCompileResult(result, filePath, "main.css", "replugged");
+		} else {
+			saveSassCompileResult(result, distPath, "main.css");
+
+			if (flagVencord) {
+				let fileName = metaData.generic.name + ".theme.css";
+				fs.copyFileSync(
+					path.join(distPath, "main.css"),
+					path.join(VENCORD_CONFIG_PATH, "themes", fileName)
+				);
+			}
 		}
 	} catch(e) {
 		console.log(`[${Date.now() - buildStart}ms] Build failed: ${e.message}`);
@@ -95,9 +120,10 @@ await buildScss();
 
 if (flagWatch) {
 	console.log("Now watching for changes");
-	fs.watch(srcPath, { recursive: true }, (eventType, filename) => {
+	chokidar.watch("src/**/*.scss").on("change", (filename) => {
+		if (!filename?.replace("\\", "/").startsWith("src/")) return;
 		if (!filename?.endsWith(".scss")) return;
 		if (buildTimeout) clearTimeout(buildTimeout);
-		buildTimeout = setTimeout(buildScss, 250);
-	});
+		buildTimeout = setTimeout(buildScss, 500);
+	})
 }

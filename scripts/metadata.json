@@ -16,7 +16,7 @@
 		"author": "",
 		"homepageURL": "",
 		"supportURL": "",
-		"updateURL": "dist/noname.user.css",
+		"updateURL": "raw/main/dist/noname.user.css",
 		"license": ""
 	},
 	"betterdiscord": {
@@ -48,7 +48,7 @@
 		},
 		"license": "",
 		"type": "replugged-theme",
-		"main": "src/main.css",
+		"main": "main.css",
 		"source": "",
 		"image": []
 	}
