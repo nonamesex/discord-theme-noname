@@ -1,0 +1,20 @@
+{
+  "id": "dev.nonamesex.noname",
+  "name": "noname",
+  "description": "personal theme for discord",
+  "author": {
+    "name": "nonamesex",
+    "discordID": "273427587282501633",
+    "github": "nonamesex"
+  },
+  "version": "1.0.0+1709266834",
+  "updater": {
+    "type": "github",
+    "id": "nonamesex/discord-theme-noname"
+  },
+  "license": "MIT",
+  "type": "replugged-theme",
+  "main": "main.css",
+  "source": "https://github.com/nonamesex/discord-theme-noname",
+  "image": []
+}
