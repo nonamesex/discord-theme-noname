@@ -1,7 +1,7 @@
 {
 	"liveServer.settings.ignoreFiles": [
-    "scripts/*",
-    "src/*",
+		"scripts/*",
+		"src/*",
 	],
 	"liveServer.settings.mount": [
 		["/", "test/splash"]

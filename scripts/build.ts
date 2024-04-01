@@ -5,6 +5,7 @@ import * as path from "path";
 import { getMetaData } from "./metadata.ts";
 import mime from "mime";
 import chokidar from "chokidar";
+import CleanCSS from "clean-css";
 
 const cwd = process.cwd();
 const distPath = path.join(cwd, "dist");
@@ -23,10 +24,10 @@ let buildStart: number = 0;
 const compileScss = async (scssPath) => {
 	const result = await sass.compileAsync(scssPath, {
 		sourceMap: !flagProd,
-		sourceMapIncludeSources: false,
+		sourceMapIncludeSources: true,
 		verbose: true,
-		charset: true,
-		style: flagProd ? "compressed" : "expanded",
+		charset: false,
+		// style: flagProd ? "compressed" : "expanded",
 		functions: {
 			"encodeBase64($string)": (args) => new sass.SassString(
 				Buffer.from(args[0].assertString("string").text).toString('base64')
@@ -38,7 +39,48 @@ const compileScss = async (scssPath) => {
 			}
 		}
 	});
+
 	console.log(`[${Date.now() - buildStart}ms] ${scssPath} compiled`);
+
+	var cleancss = new CleanCSS({
+		level: {
+			2: {
+				// uh
+				mergeSemantically: true,
+				restructureRules: true
+			}
+		},
+		sourceMap: result.sourceMap !== undefined,
+		sourceMapInlineSources: true,
+		format: flagProd ? {} : {
+			breaks: {
+				afterAtRule: true,
+				afterBlockBegins: true,
+				afterBlockEnds: true,
+				afterComment: true,
+				afterProperty: true,
+				afterRuleBegins: true,
+				afterRuleEnds: true,
+				beforeBlockEnds: true,
+				betweenSelectors: true
+			},
+			breakWith: '\n',
+			indentBy: 1,
+			indentWith: 'tab',
+			spaces: {
+				aroundSelectorRelation: true,
+				beforeBlockBegins: true,
+				beforeValue: true
+			},
+			semicolonAfterLastProperty: true
+		}
+	}).minify(result.css, result.sourceMap);
+
+	result.css = cleancss.styles;
+	result.sourceMap = cleancss.sourceMap;
+
+	console.log(`[${Date.now() - buildStart}ms] CleanCSS Level 2 optimizations`);
+
 	return result;
 }
 
@@ -60,10 +102,18 @@ const saveSassCompileResult = (result: sass.CompileResult, filePath: string, fil
 		}
 	}
 
+	if (metaType == "usercss") {
+		fs.writeFileSync(fileDescriptor, '@-moz-document domain("discord.com") {\n')
+	}
+
 	fs.writeFileSync(fileDescriptor, `${result.css}\n`);
 
+	if (metaType == "usercss") {
+		fs.writeFileSync(fileDescriptor, "}\n")
+	}
+
 	if (result.sourceMap) {
-		fs.writeFileSync(fileDescriptor, `/*# sourceMappingURL=file:///${resultFilePath}.map */\n`);
+		fs.writeFileSync(fileDescriptor, `/*# sourceMappingURL=file:///${resultFilePath.replace("\\", "/")}.map */\n`);
 		fs.writeFileSync(resultFilePath + ".map", JSON.stringify(result.sourceMap));
 	}
 
