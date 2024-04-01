@@ -14,26 +14,26 @@
 // 	--brand-experiment-560: var(--primary-400);
 // }
 
-#account {
-	.submenu_acf564 {
+#account div#account-status-picker + div {
+	.submenu_aed9ee {
 		min-width: unset;
 
 		& > div {
 			display: flex;
 		}
 
-		.separator__18122 {
+		.separator__174fc {
 			display: none;
 		}
-	
-		.statusItem__72404 {
+
+		.statusItem__24445 {
 			display: grid;
 			grid-template-rows: 10px 1fr;
 			grid-template-columns: 10px 1fr;
 			padding: 11px 11px;
-	
+
 			.status__8c19b,
-			.description_ea6680 {
+			.description_d1e167 {
 				display: none;
 			}
 		}

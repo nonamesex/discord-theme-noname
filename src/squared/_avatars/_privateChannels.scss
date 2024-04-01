@@ -1,5 +1,5 @@
-nav.privateChannels__93473 li.channel_c21703,
-div.peopleColumn__51df3 div.peopleListItem_d14722 {
+nav.privateChannels__9b518 li.channel__0aef5,
+div.peopleColumn__0c784 div.peopleListItem_dab480 {
 	img.avatar__991e2 {
 		border-radius: $avatar-32px;
 	}
@@ -7,43 +7,43 @@ div.peopleColumn__51df3 div.peopleListItem_d14722 {
 
 div.chat__52833 {
 	// Also in guild while screenshare
-	div.upperContainer__993ba img.avatar__991e2 {
+	div.upperContainer__57565 img.avatar__991e2 {
 		border-radius: $avatar-24px;
 	}
 
-	div.list__325e7 div.messageRequestItem__3b951 img.avatar__991e2 {
+	div.list__325e7 div.messageRequestItem__9f70d img.avatar__991e2 {
 		border-radius: $avatar-40px;
 	}
 
-	div.chatContainer__23434 div.container_b03b4b img.avatar__991e2 {
+	div.chatContainer__23434 div.container_cd7d9c img.avatar__991e2 {
 		border-radius: $avatar-80px;
 	}
 }
 
-div.nowPlayingColumn_f5023f div.itemCard__1f162 {
-	div.headerAvatar__27d08 {
+div.nowPlayingColumn_b025fe div.itemCard_b64118 {
+	div.headerAvatar__96ca7 {
 		img.avatar__991e2 {
 			border-radius: $avatar-32px;
 		}
 	}
 
-	div.body__83069 {
-		div.applicationStreamingAvatar_c8ee78 {
+	div.body__616e6 {
+		div.applicationStreamingAvatar_d302e9 {
 			img.avatar__991e2 {
 				border-radius: $avatar-32px;
 			}
 		}
 
-		div.voiceSectionAssets_d7306c {
-			img.voiceSectionGuildImage_ca8a0f {
+		div.voiceSectionAssets__53cc6 {
+			img.voiceSectionGuildImage__80942 {
 				border-radius: $avatar-32px;
 				-webkit-mask: unset;
 				mask: unset;
 			}
 		}
 
-		div.partyMembers_fff980 {
-			& > div.partyMember__8c6e6 {
+		div.partyMembers_bc7c6a {
+			& > div.partyMember_ed825a {
 				padding-left: 4px;
 				margin-left: unset;
 				-webkit-mask: unset;
@@ -54,7 +54,7 @@ div.nowPlayingColumn_f5023f div.itemCard__1f162 {
 				}
 			}
 
-			div.partyMemberOverflow_d12297 {
+			div.partyMemberOverflow_fa82b9 {
 				// width: var(--custom-party-avatars-avatar-diameter);
 				// height: var(--custom-party-avatars-avatar-diameter);
 				border-radius: $avatar-24px;
@@ -66,11 +66,11 @@ div.nowPlayingColumn_f5023f div.itemCard__1f162 {
 }
 
 // Message requests sidebar-chat
-div.container_def45c {
-	div.upperContainer__993ba img.avatar__991e2 {
+div.container__694a1 {
+	div.upperContainer__57565 img.avatar__991e2 {
 		border-radius: $avatar-24px;
 	}
-	div.chat__4eed1 div.messagesWrapper_ea2b0b div.container_b03b4b img.avatar__991e2 {
+	div.chat__4eed1 div.messagesWrapper_add28b div.container_cd7d9c img.avatar__991e2 {
 		border-radius: $avatar-80px;
 	}
 }

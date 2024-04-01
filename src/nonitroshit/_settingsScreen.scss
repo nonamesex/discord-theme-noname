@@ -5,19 +5,19 @@
 		}
 	}
 
-	.socialLinks_c1fc99 {
+	.socialLinks_dbdd6f {
 		display: none;
 	}
 }
 
 div#profile-customization-tab {
-	div.tryItOutSection__0f9fb,
-	div.container_d6bff4:has(div.artContainer_fc2857, div.mainColumn_f44fc2),
-	div.profileCustomizationSection__88eff div.upsellOverlayContainer__08979 {
+	div.tryItOutSection_d658ca,
+	div.container__686c4:has(div.artContainer__394fc, div.mainColumn__19e37),
+	div.profileCustomizationSection_c4a87a div.upsellOverlayContainer__9580e {
 		display: none;
 	}
 
-	div.profileCustomizationSection__88eff div.customizationSection__16fec {
+	div.profileCustomizationSection_c4a87a div.customizationSection__0f57e {
 		&:nth-child(4),
 		&:nth-child(5) {
 			display: none;
@@ -26,17 +26,17 @@ div#profile-customization-tab {
 }
 
 div#appearance-tab {
-	div.marginTop8__83d4b:nth-of-type(2) {
-		section.basicThemeSelectors_f6c054 + *:has(div.themeSelectionContainer__575f5),
-		div.selectionGroup__36139 {
+	div.marginTop8__7da6c:nth-of-type(2) {
+		section.basicThemeSelectors__5ca8c + *:has(div.themeSelectionContainer__26fcc),
+		div.selectionGroup_f2b958 {
 			display: none;
 		}
 	}
 }
 
 div[id="voice-&-video-tab"] {
-	div.container_ce40a2:has(div.soundboardRow_a14ad5),
-	div > h4 ~ div.backgroundOptions_e72ce2,
+	div.container_cbaca1:has(div.soundboardRow__4c0f5),
+	div > h4 ~ div.backgroundOptions_b49a97,
 	div > h4:nth-of-type(2) {
 		display: none;
 	}

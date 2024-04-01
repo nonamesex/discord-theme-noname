@@ -1,26 +1,26 @@
-div.accountProfilePopoutWrapper_af829a {
+div.accountProfilePopoutWrapper_d4887f {
 	left: 0px;
 
-	.userPopoutOuter_d739b2 {
+	.userPopoutOuter__3884e {
 		margin: 0px;
 		width: 228px;
 		border-radius: 4px;
 
-		.userPopoutInner_f545a3 {
-			& > .bannerSVGWrapper__3e7b0,
-			& > .avatarWrapper_f77579,
-			& > .profileBadges__7a7cb {
+		.userPopoutInner_e90432 {
+			& > .bannerSVGWrapper__8a38c,
+			& > .avatarWrapper__0cd44,
+			& > .profileBadges__1f2ab {
 				display: none;
 			}
 
-			& > .userPopoutOverlayBackground_d8afa4 {
+			& > .userPopoutOverlayBackground_bf6444 {
 				margin: unset;
 				border-radius: 4px;
 
-				& > .usernameSection__53868,
-				& > .customStatusSection_ce6c27,
-				& > .divider__2bbbc,
-				& > .scrollerBase_dc3aa9 {
+				& > .usernameSection_dd6196,
+				& > .customStatusSection_c9f9ba,
+				& > .divider_d6f39c,
+				& > .scrollerBase__65223 {
 					display: none;
 				}
 			}

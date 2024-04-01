@@ -1,5 +1,5 @@
-.container_d667ff {
-	.actionButtons_b58cbb {
+.container_e1958d {
+	.actionButtons__85e3c {
 		grid-template-columns: repeat(4, 50px);
 
 		& > button:nth-child(3),
@@ -8,7 +8,7 @@
 		}
 	}
 
-	.flex_f5fbb7.horizontal__992f6.justifyStart__42744.alignStretch_e239ef.noWrap__5c413 {
+	.flex_f18b02.horizontal__4848b.justifyStart__6f8c8.alignStretch__2d62d.noWrap__5c413 {
 		position: absolute;
 		right: 0px;
 		bottom: 9px;
@@ -23,15 +23,15 @@
 				background-color: var(--background-secondary);
 			}
 
-			&:nth-child(2) {
-				background-color: var(--red-900);
-				color: var(--red-260);
-
-				&:hover {
-					background-color: var(--red-500);
-					color: var(--interactive-active);
-				}
-			}
+//			&:nth-child(2) {
+//				background-color: var(--red-430);
+//				color: var(--white-500) !important;
+//
+//				&:hover {
+//					background-color: var(--red-500);
+//					color: var(--white-500) !important;
+//				}
+//			}
 		}
 	}
 }

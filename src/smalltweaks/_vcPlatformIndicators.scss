@@ -1,7 +1,6 @@
-.message__80c10,
-.memberInner_a32223,
-.nameAndDecorators_cfd1ff,
-.message-username-0 {
+.headerText_bd68ec,
+.nameAndDecorators_c896d6,
+.nameAndDecorators__389dd {
 	.vc-platform-indicator {
 		vertical-align: unset !important;
 		height: 100%;
@@ -10,5 +9,16 @@
 			height: 12px;
 			width: 12px;
 		}
+	}
+}
+
+.nameAndDecorators_c896d6,
+.nameAndDecorators__389dd {
+	.vc-platform-indicator {
+		flex: 0 0 auto;
+		position: relative !important;
+		top: 1px !important;
+		flex-shrink: 0;
+		padding: 1px !important;
 	}
 }
