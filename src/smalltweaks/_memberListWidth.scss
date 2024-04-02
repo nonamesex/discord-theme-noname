@@ -1,0 +1,13 @@
+$width: 280px;
+
+.membersWrap__5ca6b {
+	min-width: $width;
+
+	.members__573eb {
+		width: $width;
+
+		.member_aa4760 {
+			max-width: calc($width - 16px);
+		}
+	}
+}

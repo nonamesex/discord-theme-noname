@@ -1,0 +1,46 @@
+/*
+.vc-membercount-widget.vc-membercount-member-list {
+	flex-flow: wrap;
+	justify-content: unset;
+
+	& > div {
+		&::after {
+			content: attr(aria-label);
+			font-size: 12px;
+			line-height: 1.5rem;
+			color: var(--primary-400);
+		}
+
+		& > * {
+			display:none;
+		}
+	}
+}
+*/
+
+.vc-membercount-widget.vc-membercount-member-list {
+	flex-direction: column;
+	justify-content: unset;
+	pointer-events: none;
+
+	.vc-membercount-online-dot,
+	.vc-membercount-total-dot {
+		display: none;
+	}
+
+	.vc-membercount-online,
+	.vc-membercount-total {
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 1.5rem;
+		color: var(--primary-400);
+	}
+
+	.vc-membercount-online::before {
+		content: "ONLINE — ";
+	}
+
+	.vc-membercount-total::before {
+		content: "MEMBERS — ";
+	}
+}

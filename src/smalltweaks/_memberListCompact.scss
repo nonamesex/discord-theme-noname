@@ -1,0 +1,45 @@
+.memberInner__4dac6.layout_bb8e67 {
+	height: 32px;
+
+	.avatar__6337f {
+		width: 24px;
+		height: 24px;
+
+		.wrapper__3ed10 {
+			width: 24px !important;
+			height: 24px !important;
+
+			& > svg {
+				width: 30px;
+				height: 30px;
+
+				&:has(foreignObject[mask="url(#svg-mask-avatar-default)"]) {
+					width: 24px;
+					height: 24px;
+				}
+
+				foreignObject {
+					mask: url(#svg-mask-avatar-default);
+				}
+
+				& > *:not(foreignObject) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.nameAndDecorators__389dd {
+		justify-content: space-between;
+
+		.name__7afe8 {
+			flex: auto;
+			font-size: 14px;
+		}
+	}
+
+	.subText__4629e {
+		display: none;
+		zoom: 0.8;
+	}
+}
