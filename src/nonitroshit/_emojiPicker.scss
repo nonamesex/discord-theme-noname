@@ -1,0 +1,42 @@
+div#emoji-picker-tab-panel {
+	div.listItems__49027 > div {
+		&:has(.categoryItemLockIconContainer__61fa5) {
+			pointer-events: none;
+
+			svg:has(img) {
+				display: none;
+			}
+		}
+	}
+}
+
+div#emoji-picker-grid {
+	div.nitroTopDividerContainer_b829ac,
+	div.nitroBottomDivider__87a76{
+		display: none;
+	}
+
+	div.categorySectionNitroLocked__5b287 {
+		div.headerIcon_b1bd3f {
+			display: none;
+
+			&+.headerLabel_febbb2 {
+				margin-left: unset;
+			}
+		}
+
+		&.categorySectionCollapsed__18e51 {
+			pointer-events: none;
+			background-color: unset;
+		}
+
+		ul.emojiListRow__6d732 li:has(img.lockedEmoji__8c347) {
+			pointer-events: none;
+			display: none;
+		}
+	}
+
+	div.upsellContainer__15a05 {
+		display: none;
+	}
+}
