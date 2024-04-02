@@ -51,7 +51,7 @@ const compileScss = async (scssPath) => {
 			}
 		},
 		sourceMap: result.sourceMap !== undefined,
-		sourceMapInlineSources: true,
+		sourceMapInlineSources: false,
 		format: flagProd ? {} : {
 			breaks: {
 				afterAtRule: true,
@@ -77,7 +77,8 @@ const compileScss = async (scssPath) => {
 	}).minify(result.css, result.sourceMap);
 
 	result.css = cleancss.styles;
-	result.sourceMap = cleancss.sourceMap;
+	if (cleancss.sourceMap)
+		result.sourceMap = JSON.stringify(cleancss.sourceMap).replaceAll("\\\\", "/");
 
 	console.log(`[${Date.now() - buildStart}ms] CleanCSS Level 2 optimizations`);
 
@@ -113,8 +114,8 @@ const saveSassCompileResult = (result: sass.CompileResult, filePath: string, fil
 	}
 
 	if (result.sourceMap) {
-		fs.writeFileSync(fileDescriptor, `/*# sourceMappingURL=file:///${resultFilePath.replace("\\", "/")}.map */\n`);
-		fs.writeFileSync(resultFilePath + ".map", JSON.stringify(result.sourceMap));
+		fs.writeFileSync(fileDescriptor, `/*# sourceMappingURL=file:///${resultFilePath.replaceAll("\\", "/")}.map */\n`);
+		fs.writeFileSync(resultFilePath + ".map", result.sourceMap);
 	}
 
 	fs.closeSync(fileDescriptor);
