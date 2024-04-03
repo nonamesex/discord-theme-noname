@@ -1,37 +1,40 @@
+$btnWidth: 60px; // Default: 50px
+
 .container_e1958d {
 	.actionButtons__85e3c {
-		grid-template-columns: repeat(4, 50px);
+		grid-template-columns: repeat(4, $btnWidth);
 
 		& > button:nth-child(3),
 		& > div:nth-child(4) {
 			display: none;
+		}
+
+		.buttonIcon__64412 {
+			width: 20px !important;
+			height: 20px !important;
 		}
 	}
 
 	.flex_f18b02.horizontal__4848b.justifyStart__6f8c8.alignStretch__2d62d.noWrap__5c413 {
 		position: absolute;
 		right: 0px;
-		bottom: 9px;
+		bottom: 1px;
+
+		display: grid;
+		grid-template-columns: repeat(2, $btnWidth);
+		grid-gap: 8px;
+		justify-content: space-between;
+		padding: 8px;
+		margin-left: unset;
 
 		& > button {
-			width: 50px;
-			margin-right: 8px;
+			width: 100%;
 			background-color: var(--background-primary);
 			color: var(--interactive-active);
 
 			&:hover {
 				background-color: var(--background-secondary);
 			}
-
-//			&:nth-child(2) {
-//				background-color: var(--red-430);
-//				color: var(--white-500) !important;
-//
-//				&:hover {
-//					background-color: var(--red-500);
-//					color: var(--white-500) !important;
-//				}
-//			}
 		}
 	}
 }
