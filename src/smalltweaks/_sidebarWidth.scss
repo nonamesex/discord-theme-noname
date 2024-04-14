@@ -72,7 +72,7 @@ $banner-height: calc($sidebar-width-multiplier * $default-banner-height);
 		padding: 4px 8px 6px;
 		row-gap: 5px;
 		column-gap: 8px;
-		flex-wrap: wrap-reverse;
+		// flex-wrap: wrap-reverse;
 		justify-content: space-between;
 	}
 
