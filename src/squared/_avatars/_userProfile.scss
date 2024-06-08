@@ -15,13 +15,13 @@
 	));
 }
 
-div.userProfileModalInner__99b1e {
+div.userProfileModalInner__84e47 {
 	div.header_dda341 div.avatarStack__789b4 img.avatar__991e2 {
 		border-radius: $avatar-120px;
 		border-bottom-right-radius: math.max(24px, $avatar-120px);
 	}
 
-	&.userProfileInnerThemedNonPremium_ed9022 {
+	&.userProfileInnerThemedNonPremium_b64fb4 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($avatar-120px * 1.5))};
 			mask: var(--mask);
@@ -29,7 +29,7 @@ div.userProfileModalInner__99b1e {
 		}
 	}
 
-	&.userProfileInnerThemedPremiumWithoutBanner__3705a {
+	&.userProfileInnerThemedPremiumWithoutBanner_ee8277 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($avatar-120px * 1.5))};
 			mask: var(--mask);
@@ -37,7 +37,7 @@ div.userProfileModalInner__99b1e {
 		}
 	}
 
-	&.userProfileInnerThemedWithBanner__2152d {
+	&.userProfileInnerThemedWithBanner_e9e7c5 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 14px, 138px, calc($avatar-120px * 1.5))};
 			mask: var(--mask);
@@ -46,13 +46,13 @@ div.userProfileModalInner__99b1e {
 	}
 }
 
-div.userPopoutInner_e90432 {
+div.userPopoutInner_ac0960 {
 	div.avatarWrapper__0cd44 div.avatarStack__789b4 img.avatar__991e2 {
 		border-radius: $avatar-80px;
 		border-bottom-right-radius: math.max(24px, $avatar-80px);
 	}
 
-	&.userProfileInnerThemedNonPremium_ed9022 {
+	&.userProfileInnerThemedNonPremium_b64fb4 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 16px, 10px, calc($avatar-80px * 1.5))};
 			mask: var(--mask);
@@ -60,7 +60,7 @@ div.userPopoutInner_e90432 {
 		}
 	}
 
-	&.userProfileInnerThemedPremiumWithoutBanner__3705a {
+	&.userProfileInnerThemedPremiumWithoutBanner_ee8277 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 36px, calc($avatar-80px * 1.5))};
 			mask: var(--mask);
@@ -68,7 +68,7 @@ div.userPopoutInner_e90432 {
 		}
 	}
 
-	&.userProfileInnerThemedWithBanner__2152d {
+	&.userProfileInnerThemedWithBanner_e9e7c5 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($avatar-80px * 1.5))};
 			mask: var(--mask);
@@ -77,13 +77,13 @@ div.userPopoutInner_e90432 {
 	}
 }
 
-div.userPanelInner_f9edb8 {
+div.userPanelInner__3184c {
 	div.avatarWrapper__0cd44 div.avatarStack__789b4 img.avatar__991e2 {
 		border-radius: $avatar-80px;
 		border-bottom-right-radius: math.max(24px, $avatar-80px);
 	}
 
-	&.userPanelInnerThemed_c2aed9 {
+	&.userPanelInnerThemed__651e4 {
 		svg.bannerSVGWrapper__8a38c foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($avatar-80px * 1.5))};
 			mask: var(--mask);
