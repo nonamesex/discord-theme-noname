@@ -21,6 +21,40 @@ let buildTimeout: NodeJS.Timeout;
 let buildInProcess: boolean = false;
 let buildStart: number = 0;
 
+const minifierOutput = new CleanCSS({
+	level: {
+		2: {
+			// uh
+			mergeSemantically: true,
+			restructureRules: true
+		}
+	},
+	sourceMap: !flagProd, //result.sourceMap !== undefined,
+	sourceMapInlineSources: false,
+	format: flagProd ? {} : {
+		breaks: {
+			afterAtRule: true,
+			afterBlockBegins: true,
+			afterBlockEnds: true,
+			afterComment: true,
+			afterProperty: true,
+			afterRuleBegins: true,
+			afterRuleEnds: true,
+			beforeBlockEnds: true,
+			betweenSelectors: true
+		},
+		breakWith: '\n',
+		indentBy: 1,
+		indentWith: 'tab',
+		spaces: {
+			aroundSelectorRelation: true,
+			beforeBlockBegins: true,
+			beforeValue: true
+		},
+		semicolonAfterLastProperty: true
+	}
+});
+
 const compileScss = async (scssPath) => {
 	const result = await sass.compileAsync(scssPath, {
 		sourceMap: !flagProd,
@@ -42,43 +76,11 @@ const compileScss = async (scssPath) => {
 
 	console.log(`[${Date.now() - buildStart}ms] ${scssPath} compiled`);
 
-	var cleancss = new CleanCSS({
-		level: {
-			2: {
-				// uh
-				mergeSemantically: true,
-				restructureRules: true
-			}
-		},
-		sourceMap: result.sourceMap !== undefined,
-		sourceMapInlineSources: false,
-		format: flagProd ? {} : {
-			breaks: {
-				afterAtRule: true,
-				afterBlockBegins: true,
-				afterBlockEnds: true,
-				afterComment: true,
-				afterProperty: true,
-				afterRuleBegins: true,
-				afterRuleEnds: true,
-				beforeBlockEnds: true,
-				betweenSelectors: true
-			},
-			breakWith: '\n',
-			indentBy: 1,
-			indentWith: 'tab',
-			spaces: {
-				aroundSelectorRelation: true,
-				beforeBlockBegins: true,
-				beforeValue: true
-			},
-			semicolonAfterLastProperty: true
-		}
-	}).minify(result.css, result.sourceMap);
+	const minifierResult = minifierOutput.minify(result.css, result.sourceMap);
 
-	result.css = cleancss.styles;
-	if (cleancss.sourceMap)
-		result.sourceMap = JSON.stringify(cleancss.sourceMap).replaceAll("\\\\", "/");
+	result.css = minifierResult.styles;
+	if (minifierResult.sourceMap)
+		result.sourceMap = JSON.stringify(minifierResult.sourceMap).replaceAll("\\\\", "/");
 
 	console.log(`[${Date.now() - buildStart}ms] CleanCSS Level 2 optimizations`);
 
