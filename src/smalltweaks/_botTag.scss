@@ -1,5 +1,4 @@
 .botTag__4211a {
-	padding: unset;
 	background-color: unset;
 
 	span {
@@ -10,6 +9,10 @@
 		position: absolute;
 		margin-left: unset;
 		opacity: 0;
+	}
+
+	&.px__7f04f {
+		padding: unset;
 	}
 
 	&::after {
