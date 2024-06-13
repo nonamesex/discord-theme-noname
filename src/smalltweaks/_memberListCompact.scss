@@ -36,6 +36,21 @@
 			flex: auto;
 			font-size: 14px;
 		}
+
+		.vc-platform-indicator {
+			order: 1;
+			margin-left: unset !important;
+		}
+
+		svg.icon__07c5b {
+			margin-left: unset;
+			width: 12px;
+			height: 12px;
+
+			&.premiumIcon__58b74 {
+				margin-top: 2px;
+			}
+		}
 	}
 
 	.subText__4629e {
