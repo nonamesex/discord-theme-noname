@@ -1,23 +1,27 @@
 // (webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.ICONS!==void 0).exports.ICONS.forEach((icon)=>console.log(`\$${icon.id}: "${icon.iconSource}"; // ${icon.name}`))
 
-$BrandDarkIcon: "/assets/e3fc64532265764e1d67.webp"; // Goth
-$MangaIcon: "/assets/003c16533dc9327b66d8.webp"; // WHAM
-$MatteDarkIcon: "/assets/b9ba392d5652d7047b69.webp"; // Charcoal
-$MatteLightIcon: "/assets/c53596a8aabec268677f.webp"; // Ceramic
-$PastelIcon: "/assets/364d22ce868c406cf13a.webp"; // Pastel
-$PirateIcon: "/assets/7fdb7c4b9dac8c9db942.webp"; // Matey
-$CamoIcon: "/assets/2f906bd6a510974effa3.webp"; // Tactical
-$SunsetIcon: "/assets/9bcd500d06a4e99eef38.webp"; // Sunset Ave
-$GalaxyIcon: "/assets/a28b009dcc138c849209.webp"; // Galactic Chrome
-$Y2KIcon: "/assets/1779971f835dfdb63d9f.webp"; // Holo
-$CherryBlossomIcon: "/assets/3ea3e47f993b5620ea25.webp"; // Sakura
-$BeanieIcon: "/assets/15fa601cc9c87bee2e26.webp"; // Sherbet Dreamsicle
-$GamingIcon: "/assets/31efa1913785fddb04d9.webp"; // Gaming
-$CircuitIcon: "/assets/a0e8219e310053130cba.webp"; // Mainframe
-$HoloWavesIcon: "/assets/720b20f6ecb7b2995714.webp"; // Prismatic Waves
-$BlushIcon: "/assets/e0fe5bc7745f71705066.webp"; // uwu~
-$AngryIcon: "/assets/2a9096474ecb8192b3ce.webp"; // Fuming
-$ControllerIcon: "/assets/1d8770de85cb6d5284a5.webp"; // D64
+$BrandDarkIcon: "/assets/022b56a46027cd8944a0.webp"; // Goth
+$MangaIcon: "/assets/8d8764191e7377ce6d1c.webp"; // WHAM
+$MatteDarkIcon: "/assets/4a39ebc7865c34cb05ca.webp"; // Charcoal
+$MatteLightIcon: "/assets/259c9e517e54b637bc8b.webp"; // Ceramic
+$PastelIcon: "/assets/536c4ee2800f76d480f2.webp"; // Pastel
+$PirateIcon: "/assets/1ef51ba4b86ea4257b1e.webp"; // Matey
+$CamoIcon: "/assets/594e671c4337bdaa354d.webp"; // Tactical
+$SunsetIcon: "/assets/7f15142d4ff388f352cd.webp"; // Sunset Ave
+$GalaxyIcon: "/assets/1cc2c82a6058a7cc380c.webp"; // Galactic Chrome
+$Y2KIcon: "/assets/edc57c29789364e356a8.webp"; // Holo
+$CherryBlossomIcon: "/assets/cd734396523f0ccd8985.webp"; // Sakura
+$BeanieIcon: "/assets/2c98b86ce7d10c0ddeb3.webp"; // Sherbet Dreamsicle
+$GamingIcon: "/assets/fd693e96180f96c3708b.webp"; // Gaming
+$CircuitIcon: "/assets/7509dcee3065c41654b1.webp"; // Mainframe
+$HoloWavesIcon: "/assets/5e4012ec7d5cc0f2d584.webp"; // Prismatic Waves
+$BlushIcon: "/assets/eca1ee6a7f84f537506b.webp"; // uwu~
+$AngryIcon: "/assets/e8b3942d0a8f2667f170.webp"; // Fuming
+$ControllerIcon: "/assets/c24789d71a791a531bd7.webp"; // D64
+$BlurpleTwilightIcon: "/assets/f5142ff9381de17c7591.webp"; // Blurple Twilight
+$InRainbowsIcon: "/assets/964564da43ac1eed1a24.webp"; // In Rainbows
+$MidnightPrismIcon: "/assets/5b827a22c6090c898656.webp"; // Midnight Prism
+$ColorWaveIcon: "/assets/b165b3568ab797c79bda.webp"; // Color Wave
 
 @function urlRelative($path) {
 	@return
@@ -28,8 +32,8 @@ $ControllerIcon: "/assets/1d8770de85cb6d5284a5.webp"; // D64
 }
 
 div.listItemWrapper__3d465 > div > svg > foreignObject {
-	& > div.wrapper__8436d[data-list-item-id=guildsnav___home] {
-		& > div.childWrapper_a6ce15 {
+	& > div.wrapper_a6f950[data-list-item-id=guildsnav___home] {
+		& > div.childWrapper__760c6 {
 			background-image: urlRelative($CherryBlossomIcon);
 			background-size: 100% 100%;
 

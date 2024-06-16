@@ -1,5 +1,5 @@
 div.streamQualityIndicator__1fe46 {
-	.baseShapeRoundLeft_c1e45f {
+	.baseShapeRoundLeft_b6b1cf {
 		border-radius: $radius 0 0 $radius;
 	}
 	div.liveIndicator__2469a {
@@ -7,6 +7,10 @@ div.streamQualityIndicator__1fe46 {
 
 		.liveShapeRoundRight_ae9843 {
 			border-radius: 0 $radius $radius 0;
+		}
+
+		.liveShapeRound__75159 {
+			border-radius: $radius;
 		}
 	}
 }
