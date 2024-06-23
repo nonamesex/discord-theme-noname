@@ -1,12 +1,12 @@
 $guild-list-normal: $rounding-48px;
 $guild-list-selected: calc($guild-list-normal * 2);
 
-div.listItem_c96c45 {
-	div.wrapperSimple_c5f96a {
+.listItem_c96c45 {
+	.wrapperSimple_c5f96a {
 		border-radius: $guild-list-normal;
 	}
 
-	div.wrapper_c5f96a > svg {
+	.wrapper_c5f96a > svg {
 		border-radius: $guild-list-normal;
 		transition: border-radius 150ms ease-out;
 		background-color: var(--background-secondary);
@@ -19,10 +19,10 @@ div.listItem_c96c45 {
 			d: path("M 0,0 H 48 V 48 H 0 Z");
 		}
 
-		div.folderIconWrapper_bc7085 {
+		.folderIconWrapper_bc7085 {
 			border-radius: unset;
 
-			div.closedFolderIconWrapper_bc7085 > div.guildIcon_bc7085 {
+			.closedFolderIconWrapper_bc7085 > div.guildIcon_bc7085 {
 				border-radius: calc($guild-list-normal / 2);
 
 				&:not(.noIcon__06e39) {
@@ -32,7 +32,7 @@ div.listItem_c96c45 {
 		}
 	}
 
-	div.selected_e85eba > div.wrapper__9916c > svg {
+	.selected_e85eba > .wrapper__9916c > svg {
 		border-radius: $guild-list-selected;
 	}
 }

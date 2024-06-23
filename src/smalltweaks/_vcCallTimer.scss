@@ -1,5 +1,5 @@
-section.panels_a4d4d9 div.inner_adcaac:has(.text-xs\/normal_dc00ef.subtext_e06aad.channel_adcaac > p) {
-	.text-xs\/normal_dc00ef.subtext_e06aad.channel_adcaac > p {
+.panels_a4d4d9 .inner_adcaac:has(div > a > div > p) {
+	div > a > div > p {
 		span {
 			font-family: var(--font-primary) !important;
 		}
@@ -13,34 +13,34 @@ section.panels_a4d4d9 div.inner_adcaac:has(.text-xs\/normal_dc00ef.subtext_e06aa
 	}
 
 	& > div {
-		&:has(div.rtcConnectionStatus_c0cb95):has(button.rtcConnectionStatusConnected_c0cb95) {
-			div.labelWrapper_c0cb95 {
-				button.rtcConnectionStatusConnected_c0cb95 {
+		&:has(.rtcConnectionStatus_c0cb95):has(.rtcConnectionStatusConnected_c0cb95) {
+			.labelWrapper_c0cb95 {
+				.rtcConnectionStatusConnected_c0cb95 {
 					opacity: 0;
 					width: 100%;
 				}
 
 				width: 100%;
 			}
-			.text-xs\/normal_dc00ef.subtext_e06aad.channel_adcaac > p {
+			a > div > p {
 				display: block;
 			}
 		}
 
-		&:has(div.rtcConnectionQualityFine_c0cb95 ) {
-			.text-xs\/normal_dc00ef.subtext_e06aad.channel_adcaac > p {
+		&:has(.rtcConnectionQualityFine_c0cb95) {
+			a > div > p {
 				color: var(--text-positive);
 			}
 		}
 
-		&:has(div.rtcConnectionQualityAverage_c0cb95 ) {
-			.text-xs\/normal_dc00ef.subtext_e06aad.channel_adcaac > p {
+		&:has(.rtcConnectionQualityAverage_c0cb95) {
+			a > div > p {
 				color: var(--text-warning);
 			}
 		}
 
-		&:has(div.rtcConnectionQualityBad_c0cb95 ) {
-			.text-xs\/normal_dc00ef.subtext_e06aad.channel_adcaac > p {
+		&:has(.rtcConnectionQualityBad_c0cb95) {
+			a > div > p {
 				color: var(--text-danger);
 			}
 		}

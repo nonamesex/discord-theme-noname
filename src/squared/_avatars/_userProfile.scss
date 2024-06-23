@@ -15,7 +15,7 @@
 	));
 }
 
-div.userProfileModalInner_c69a7b {
+.userProfileModalInner_c69a7b {
 	&.userProfileInnerThemedNonPremium_c69a7b {
 		.bannerSVGWrapper_b32cc2 foreignObject {
 			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($rounding-120px * 1.5))};
@@ -41,7 +41,7 @@ div.userProfileModalInner_c69a7b {
 	}
 }
 
-div.userPopoutInner_c69a7b {
+.userPopoutInner_c69a7b {
 	&.userProfileInnerThemedNonPremium_c69a7b {
 		.bannerSVGWrapper_b32cc2 foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 16px, 10px, calc($rounding-80px * 1.5))};
@@ -73,7 +73,7 @@ div.userPopoutInner_c69a7b {
 	}
 }
 
-div.userPanelInner_c69a7b {
+.userPanelInner_c69a7b {
 	&.userPanelInnerThemed_c69a7b {
 		.bannerSVGWrapper_b32cc2 foreignObject {
 			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 10px, 66px, calc($rounding-80px * 1.5))};
@@ -83,7 +83,7 @@ div.userPanelInner_c69a7b {
 	}
 }
 
-div.accountProfileCard_b69b77 {
+.accountProfileCard_b69b77 {
 	.bannerSVGWrapper_b32cc2 foreignObject {
 		--mask: #{getBannerMask(660px, 100px, 92px, 92px, 16px, 76px, calc($rounding-80px * 1.5))};
 		mask: var(--mask);

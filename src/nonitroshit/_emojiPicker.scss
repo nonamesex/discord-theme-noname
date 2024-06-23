@@ -1,5 +1,5 @@
-div#emoji-picker-tab-panel {
-	div.listItems_dcade6 > div {
+#emoji-picker-tab-panel {
+	.listItems_dcade6 > div {
 		&:has(.categoryItemLockIconContainer_bfabc4) {
 			pointer-events: none;
 
@@ -10,17 +10,17 @@ div#emoji-picker-tab-panel {
 	}
 }
 
-div#emoji-picker-grid {
-	div.nitroTopDividerContainer_e8f337,
-	div.nitroBottomDivider_a3bc57{
+#emoji-picker-grid {
+	.nitroTopDividerContainer_e8f337,
+	.nitroBottomDivider_a3bc57{
 		display: none;
 	}
 
-	div.categorySectionNitroLocked_a3bc57 {
-		div.headerIcon_e06857 {
+	.categorySectionNitroLocked_a3bc57 {
+		.headerIcon_e06857 {
 			display: none;
 
-			&+.headerLabel_e06857 {
+			& + .headerLabel_e06857 {
 				margin-left: unset;
 			}
 		}
@@ -30,13 +30,13 @@ div#emoji-picker-grid {
 			background-color: unset;
 		}
 
-		ul.emojiListRow_fbfedd li:has(img.lockedEmoji_bcf389) {
+		.emojiListRow_fbfedd li:has(img.lockedEmoji_bcf389) {
 			pointer-events: none;
 			display: none;
 		}
 	}
 
-	div.upsellContainer_a3bc57 {
+	.upsellContainer_a3bc57 {
 		display: none;
 	}
 }
