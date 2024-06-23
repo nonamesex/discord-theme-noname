@@ -15,79 +15,78 @@
 	));
 }
 
-div.userProfileModalInner__84e47 {
-	div.header_dda341 div.avatarStack__789b4 img.avatar__991e2 {
-		border-radius: $avatar-120px;
-		border-bottom-right-radius: math.max(24px, $avatar-120px);
-	}
-
-	&.userProfileInnerThemedNonPremium_b64fb4 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($avatar-120px * 1.5))};
+div.userProfileModalInner_c69a7b {
+	&.userProfileInnerThemedNonPremium_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($rounding-120px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
 	}
 
-	&.userProfileInnerThemedPremiumWithoutBanner_ee8277 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($avatar-120px * 1.5))};
+	&.userProfileInnerThemedPremiumWithoutBanner_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(600px, 106px, 136px, 136px, 14px, 32px, calc($rounding-120px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
 	}
 
-	&.userProfileInnerThemedWithBanner_e9e7c5 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 14px, 138px, calc($avatar-120px * 1.5))};
+	&.userProfileInnerThemedWithBanner_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 14px, 138px, calc($rounding-120px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
 	}
 }
 
-div.userPopoutInner_ac0960 {
-	div.avatarWrapper__0cd44 div.avatarStack__789b4 img.avatar__991e2 {
-		border-radius: $avatar-80px;
-		border-bottom-right-radius: math.max(24px, $avatar-80px);
-	}
-
-	&.userProfileInnerThemedNonPremium_b64fb4 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 16px, 10px, calc($avatar-80px * 1.5))};
+div.userPopoutInner_c69a7b {
+	&.userProfileInnerThemedNonPremium_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 16px, 10px, calc($rounding-80px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
 	}
 
-	&.userProfileInnerThemedPremiumWithoutBanner_ee8277 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 36px, calc($avatar-80px * 1.5))};
+	&.userProfileInnerThemedPremiumWithoutBanner_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 36px, calc($rounding-80px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
 	}
 
-	&.userProfileInnerThemedWithBanner_e9e7c5 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($avatar-80px * 1.5))};
+	&.userProfileInnerThemedWithBanner_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($rounding-80px * 1.5))};
+			mask: var(--mask);
+			-webkit-mask: var(--mask);
+		}
+	}
+
+	.avatarHintInner_f89da9,
+	.hoverIconWrapper_ab876d,
+	.imageUploaderInner_de76e4 {
+		border-radius: $rounding-80px;
+	}
+}
+
+div.userPanelInner_c69a7b {
+	&.userPanelInnerThemed_c69a7b {
+		.bannerSVGWrapper_b32cc2 foreignObject {
+			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 10px, 66px, calc($rounding-80px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
 	}
 }
 
-div.userPanelInner__3184c {
-	div.avatarWrapper__0cd44 div.avatarStack__789b4 img.avatar__991e2 {
-		border-radius: $avatar-80px;
-		border-bottom-right-radius: math.max(24px, $avatar-80px);
-	}
-
-	&.userPanelInnerThemed__651e4 {
-		svg.bannerSVGWrapper__8a38c foreignObject {
-			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($avatar-80px * 1.5))};
-			mask: var(--mask);
-			-webkit-mask: var(--mask);
-		}
+div.accountProfileCard_b69b77 {
+	.bannerSVGWrapper_b32cc2 foreignObject {
+		--mask: #{getBannerMask(660px, 100px, 92px, 92px, 16px, 76px, calc($rounding-80px * 1.5))};
+		mask: var(--mask);
+		-webkit-mask: var(--mask);
 	}
 }

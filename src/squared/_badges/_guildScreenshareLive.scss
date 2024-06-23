@@ -1,16 +1,11 @@
-div.streamQualityIndicator__1fe46 {
-	.baseShapeRoundLeft_b6b1cf {
-		border-radius: $radius 0 0 $radius;
+div.streamQualityIndicator_c5881c {
+	.baseShapeRoundLeft_df8943 {
+		border-radius: $badgeRounding 0 0 $badgeRounding;
 	}
-	div.liveIndicator__2469a {
-		border-radius: 0 $radius $radius 0 !important;
-
-		.liveShapeRoundRight_ae9843 {
-			border-radius: 0 $radius $radius 0;
-		}
-
-		.liveShapeRound__75159 {
-			border-radius: $radius;
+	.liveIndicator_c5881c {
+		border-radius: 0 $badgeRounding $badgeRounding 0 !important;
+		.liveShapeRoundRight_e17fae {
+			border-radius: 0 $badgeRounding $badgeRounding 0;
 		}
 	}
 }

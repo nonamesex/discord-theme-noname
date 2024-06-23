@@ -1,6 +1,6 @@
 div#emoji-picker-tab-panel {
-	div.listItems__49027 > div {
-		&:has(.categoryItemLockIconContainer__61fa5) {
+	div.listItems_dcade6 > div {
+		&:has(.categoryItemLockIconContainer_bfabc4) {
 			pointer-events: none;
 
 			svg:has(img) {
@@ -11,32 +11,32 @@ div#emoji-picker-tab-panel {
 }
 
 div#emoji-picker-grid {
-	div.nitroTopDividerContainer_b829ac,
-	div.nitroBottomDivider__87a76{
+	div.nitroTopDividerContainer_e8f337,
+	div.nitroBottomDivider_a3bc57{
 		display: none;
 	}
 
-	div.categorySectionNitroLocked__5b287 {
-		div.headerIcon_b1bd3f {
+	div.categorySectionNitroLocked_a3bc57 {
+		div.headerIcon_e06857 {
 			display: none;
 
-			&+.headerLabel_febbb2 {
+			&+.headerLabel_e06857 {
 				margin-left: unset;
 			}
 		}
 
-		&.categorySectionCollapsed__18e51 {
+		&.categorySectionCollapsed_a3bc57 {
 			pointer-events: none;
 			background-color: unset;
 		}
 
-		ul.emojiListRow__6d732 li:has(img.lockedEmoji__8c347) {
+		ul.emojiListRow_fbfedd li:has(img.lockedEmoji_bcf389) {
 			pointer-events: none;
 			display: none;
 		}
 	}
 
-	div.upsellContainer__15a05 {
+	div.upsellContainer_a3bc57 {
 		display: none;
 	}
 }

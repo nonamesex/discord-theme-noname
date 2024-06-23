@@ -1,14 +1,17 @@
-div.listItem__48528 {
-	div.wrapperSimple__9e2b0 {
+$guild-list-normal: $rounding-48px;
+$guild-list-selected: calc($guild-list-normal * 2);
+
+div.listItem_c96c45 {
+	div.wrapperSimple_c5f96a {
 		border-radius: $guild-list-normal;
 	}
 
-	div.wrapper__9916c > svg {
+	div.wrapper_c5f96a > svg {
 		border-radius: $guild-list-normal;
 		transition: border-radius 150ms ease-out;
 		background-color: var(--background-secondary);
 
-		&:has(.selected_ae80f7) {
+		&:has(.selected_f90abb) {
 			border-radius: $guild-list-selected;
 		}
 
@@ -16,10 +19,10 @@ div.listItem__48528 {
 			d: path("M 0,0 H 48 V 48 H 0 Z");
 		}
 
-		div.folderIconWrapper__11165 {
+		div.folderIconWrapper_bc7085 {
 			border-radius: unset;
 
-			div.closedFolderIconWrapper__722d5 > div.guildIcon_b6bfa7 {
+			div.closedFolderIconWrapper_bc7085 > div.guildIcon_bc7085 {
 				border-radius: calc($guild-list-normal / 2);
 
 				&:not(.noIcon__06e39) {

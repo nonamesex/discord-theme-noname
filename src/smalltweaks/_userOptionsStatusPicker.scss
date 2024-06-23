@@ -15,25 +15,25 @@
 // }
 
 #account div#account-status-picker + div {
-	.submenu_aed9ee {
+	.submenu_d90b3d {
 		min-width: unset;
 
 		& > div {
 			display: flex;
 		}
 
-		.separator__174fc {
+		.separator_d90b3d {
 			display: none;
 		}
 
-		.statusItem__24445 {
+		.statusItem_ad5fac {
 			display: grid;
 			grid-template-rows: 10px 1fr;
 			grid-template-columns: 10px 1fr;
 			padding: 11px 11px;
 
-			.status__8c19b,
-			.description_d1e167 {
+			.status_ad5fac,
+			.description_ad5fac {
 				display: none;
 			}
 		}

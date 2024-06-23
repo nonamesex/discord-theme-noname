@@ -1,15 +1,15 @@
-svg.svg__90e76 {
-	&.roleDot_bdebbf,
-	&.roleDot__4756e,
-	&.roleDot_f86e49,
-	&.roleDotLeft__71172 {
-		& > path.background__1d8f0,
-		& > circle.dotBorderBase_bfd7ce,
-		& > circle.dotBorderColor__73b9c {
+svg.svg_a26d7b {
+	&.roleDot_f23da8,
+	&.roleDot_e4010c,
+	&.roleDot_ec86aa,
+	&.roleDotLeft_de3235 {
+		& > path.background_a26d7b,
+		& > circle.dotBorderBase_a26d7b,
+		& > circle.dotBorderColor_a26d7b {
 			display: none;
 		}
 
-		& > circle.dot__3e6f0 {
+		& > circle.dot_a26d7b {
 			r: 32;
 		}
 
@@ -19,12 +19,12 @@ svg.svg__90e76 {
 		margin-bottom: 3px;
 	}
 
-	&.roleDot__4756e {
+	&.roleDot_e4010c {
 		margin-bottom: 1px;
 		margin-right: 3px;
 	}
 
-	&.roleDot_bdebbf {
+	&.roleDot_f23da8 {
 		margin-right: 8px;
 	}
 }

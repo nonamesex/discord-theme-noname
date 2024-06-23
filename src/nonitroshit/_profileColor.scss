@@ -1,23 +1,33 @@
-div.userPanelOuter_eb00b1,
-div.userPopoutOuter__3884e,
-div.userProfileModalOuter_a65559 {
-	&.userProfileOuter__4ac83,
-	&.userProfileOuterThemed__1fbd7 {
-		&.profileColors_ac6ab4 {
-			&.theme-light,
-			&.theme-dark {
-				--profile-gradient-primary-color: var(--background-secondary) !important;
-				--profile-gradient-secondary-color: var(--background-secondary-alt) !important;
-				--profile-gradient-overlay-color: rgb(0 0 0 / 0%) !important;
-				--profile-gradient-button-color: var(--button-secondary-background) !important;
-				--profile-avatar-border-color: var(--background-secondary-alt) !important;
-				--profile-message-input-border-color: var(--background-modifier-accent) !important;
-				--profile-body-background-color: var(--background-floating) !important;
-				--profile-body-background-hover: var(--background-modifier-hover) !important;
-				--profile-body-divider-color: var(--background-modifier-accent) !important;
-				--profile-role-pill-background-color: var(--background-secondary-alt) !important;
-				--profile-role-pill-border-color: var(--background-secondary) !important;
-			}
-		}
+div.userPanelOuter_c69a7b,
+div.userPopoutOuter_c69a7b,
+div.userProfileModalOuter_c69a7b {
+	&.theme-light,
+	&.theme-dark {
+		--profile-gradient-primary-color: var(--background-secondary-alt) !important;
+		--profile-gradient-secondary-color: var(--background-secondary-alt) !important;
+		--profile-gradient-overlay-color: rgba(0, 0, 0, 0) !important;
+		--profile-gradient-button-color: var(--button-secondary-background) !important;
+		--profile-avatar-border-color: var(--background-secondary-alt) !important;
+		--profile-body-background-color: var(--background-floating) !important;
+		--profile-body-background-hover: var(--background-modifier-hover) !important;
+		--profile-body-divider-color: var(--background-modifier-accent) !important;
+		--profile-body-border-color: var(--border-faint) !important;
+		--profile-message-input-border-color: var(--background-modifier-accent) !important;
+		--profile-note-background-color: var(--background-tertiary) !important;
+		--profile-role-pill-background-color: var(--background-secondary-alt) !important;
+		--profile-role-pill-border-color: var(--interactive-normal) !important;
+
+		--theme-base-color-light-hsl: 0 0% 0% !important;
+		--theme-base-color-light: rgb(255 255 255) !important;
+		--theme-text-color-light: rgb(0,0,0) !important;
+		--theme-base-color-dark-hsl: 0 0% 0% !important;
+		--theme-base-color-dark: rgb(0 0 0) !important;
+		--theme-text-color-dark: rgb(255,255,255) !important;
+		--theme-base-color-amount: 0% !important;
+		--theme-text-color-amount: 0% !important;
+
+		--bg-overlay-selected: unset !important;
+		--bg-overlay-hover: unset !important;
+		--bg-overlay-active: unset !important;
 	}
 }

@@ -1,37 +1,25 @@
-div.avatar__0d465 {
-	img.avatar__991e2 {
-		border-radius: $avatar-16px;
-	}
-}
-.avatar__0d465 {
-	border-radius: $avatar-16px;
+.iconSizeSmol_f11207,
+.replyAvatar_ec86aa {
+	border-radius: $rounding-16px !important;
 }
 
-img.avatar_b8e04b,
-div.avatarSmall__85dc8 {
-	border-radius: $avatar-24px;
+.avatarSmall_cdc675 {
+	border-radius: $rounding-24px !important;
 }
 
-div.avatar__6337f,
-div.avatar__7bd22,
-div.previewAvatars__8b046 {
-	img.avatar__991e2 {
-		border-radius: $avatar-32px;
-	}
+.avatarSpeaking_c51b4e {
+	border-radius: $rounding-32px !important;
 }
 
-img.avatar__08316,
-.iconSizeMedium_bce5e3 {
-	border-radius: $avatar-40px;
+.iconSizeMedium_f11207,
+.avatar_ec86aa {
+	border-radius: $rounding-40px !important;
 }
 
-.hoverIconWrapper_e9a7d0,
-.imageUploaderInner_ecfc97 {
-	border-radius: $avatar-80px;
+.icon_f90abb {
+	border-radius: $rounding-48px !important;
 }
 
-div.avatar__445f3 {
-	img.avatar__991e2 {
-		border-radius: $avatar-120px;
-	}
+.a11y-font-scaled-down .avatar_ec86aa:not(.compact_ec86aa) {
+	border-radius: $rounding-2d5rem !important;
 }

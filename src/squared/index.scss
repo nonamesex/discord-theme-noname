@@ -1,3 +1,5 @@
-@forward "_badges";
-@forward "_avatars";
-@forward "_buttons";
+@import "variables";
+
+@import "_badges";
+@import "_avatars";
+@import "_buttons";

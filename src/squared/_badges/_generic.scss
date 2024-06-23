@@ -1,16 +1,16 @@
-div.listItem__48528 div.wrapper__9916c {
+div.listItem_c96c45 div.wrapper_c5f96a {
 	svg > defs > rect {
 		&[id$=upper_badge_masks],
 		&[id$=lower_badge_masks] {
-			rx: calc($radius * 1.6);
-			ry: calc($radius * 1.6);
+			rx: calc($badgeRounding * 2);
+			ry: calc($badgeRounding * 2);
 		}
 	}
 }
 
-.base_eaf673.eyebrow__74d9f {
-	&.baseShapeRound__42b79,
-	&.liveShapeRound__75159 {
-		border-radius: $radius
+.base_df8943.eyebrow_df8943 {
+	&.baseShapeRound_df8943,
+	&.liveShapeRound_e17fae {
+		border-radius: $badgeRounding
 	}
 }
