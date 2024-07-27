@@ -1,5 +1,5 @@
 .iconSizeSmol_f11207,
-.replyAvatar_ec86aa {
+.replyAvatar_f9f2ca {
 	border-radius: $rounding-16px !important;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .iconSizeMedium_f11207,
-.avatar_ec86aa {
+.avatar_f9f2ca {
 	border-radius: $rounding-40px !important;
 }
 
@@ -20,6 +20,11 @@
 	border-radius: $rounding-48px !important;
 }
 
-.a11y-font-scaled-down .avatar_ec86aa:not(.compact_ec86aa) {
+.a11y-font-scaled-down .avatar_f9f2ca:not(.compact_ec86aa) {
 	border-radius: $rounding-2d5rem !important;
+}
+
+.avatar_f94206.biteSize_f94206 .overlay_f94206:after,
+.avatar_f18fcb .overlay_f18fcb:after {
+	border-radius: $rounding-80px !important;
 }

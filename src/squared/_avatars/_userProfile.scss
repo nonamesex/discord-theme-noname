@@ -32,9 +32,9 @@
 		}
 	}
 
-	&.userProfileInnerThemedWithBanner_c69a7b {
+	&.fullSizeInnerThemed_c69a7b {
 		.bannerSVGWrapper_b32cc2 foreignObject {
-			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 14px, 138px, calc($rounding-120px * 1.5))};
+			--mask: #{getBannerMask(600px, 212px, 136px, 136px, 16px, 136px, calc($rounding-120px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
@@ -58,9 +58,13 @@
 		}
 	}
 
-	&.userProfileInnerThemedWithBanner_c69a7b {
+	&.biteSizeInnerThemed_c69a7b {
 		.bannerSVGWrapper_b32cc2 foreignObject {
-			--mask: #{getBannerMask(340px, 120px, 92px, 92px, 12px, 66px, calc($rounding-80px * 1.5))};
+			&:has(.biteSizeBannerPremium_c3e427) {
+				--mask: #{getBannerMask(300px, 105px, 92px, 92px, 6px, 51px, calc($rounding-80px * 1.5))};
+			}
+
+			--mask: #{getBannerMask(300px, 105px, 92px, 92px, 10px, 55px, calc($rounding-80px * 1.5))};
 			mask: var(--mask);
 			-webkit-mask: var(--mask);
 		}
