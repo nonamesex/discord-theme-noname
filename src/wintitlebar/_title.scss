@@ -1,5 +1,9 @@
 .wordmarkWindows_a934d8 {
-	padding: 9px;
+	@if $biggerAndBetter == 1 {
+		padding: 13px;
+	} @else {
+		padding: 9px;
+	}
 
 	svg {
 		content-visibility: hidden;
