@@ -1,12 +1,6 @@
 @import "variables";
+@import "callContainer";
 @import "generic";
 @import "guildChannelsNew";
 @import "guildScreenshareLive";
 @import "serversSidebarNew";
-
-.overlayContainer_ba4b17 {
-	.overlayTitle_ba4b17,
-	.status_ba4b17 {
-		border-radius: $rounding-32px;
-	}
-}

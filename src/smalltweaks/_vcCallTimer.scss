@@ -9,13 +9,13 @@
 		font-weight: 600;
 		pointer-events: none;
 		position: fixed;
-		transform: translate(19px, -34px);
+		transform: translate(20px, -30px);
 	}
 
 	& > div {
-		&:has(.rtcConnectionStatus_c0cb95):has(.rtcConnectionStatusConnected_c0cb95) {
-			.labelWrapper_c0cb95 {
-				.rtcConnectionStatusConnected_c0cb95 {
+		&:has(.rtcConnectionStatus_c02c63):has(.rtcConnectionStatusConnected_c02c63) {
+			.labelWrapper_c02c63 {
+				.rtcConnectionStatusConnected_c02c63 {
 					opacity: 0;
 					width: 100%;
 				}
@@ -27,19 +27,19 @@
 			}
 		}
 
-		&:has(.rtcConnectionQualityFine_c0cb95) {
+		&:has(.rtcConnectionQualityFine_c02c63) {
 			a > div > p {
 				color: var(--text-positive);
 			}
 		}
 
-		&:has(.rtcConnectionQualityAverage_c0cb95) {
+		&:has(.rtcConnectionQualityAverage_c02c63) {
 			a > div > p {
 				color: var(--text-warning);
 			}
 		}
 
-		&:has(.rtcConnectionQualityBad_c0cb95) {
+		&:has(.rtcConnectionQualityBad_c02c63) {
 			a > div > p {
 				color: var(--text-danger);
 			}

@@ -25,14 +25,14 @@ $guild-list-selected: calc($guild-list-normal * 1.75);
 			.closedFolderIconWrapper_bc7085 > div.guildIcon_bc7085 {
 				border-radius: calc($guild-list-normal / 2);
 
-				&:not(.noIcon__06e39) {
+				&:not(.noIcon_a64689) {
 					background-color: var(--background-secondary);
 				}
 			}
 		}
 	}
 
-	.selected_e85eba > .wrapper__9916c > svg {
+	.selected_a5ad63 > .wrapper_c5f96a > svg {
 		border-radius: $guild-list-selected;
 	}
 }

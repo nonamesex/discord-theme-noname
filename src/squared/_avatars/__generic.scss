@@ -1,17 +1,29 @@
-.iconSizeSmol_f11207,
-.replyAvatar_f9f2ca {
+.icon_cdc675,
+.iconSizeSmol_a64689,
+.replyAvatar_f9f2ca,
+.executedCommandAvatar_f9f2ca {
 	border-radius: $rounding-16px !important;
 }
 
-.avatarSmall_cdc675 {
+.embedFooterIcon_b0068a {
+	border-radius: $rounding-20px !important;
+}
+
+.avatarSmall_cdc675,
+.embedAuthorIcon_b0068a {
 	border-radius: $rounding-24px !important;
 }
 
+.small_a9e62c {
+	border-radius: $rounding-30px !important;
+}
+
+.hangStatusIcon_ba4b17,
 .avatarSpeaking_c51b4e {
 	border-radius: $rounding-32px !important;
 }
 
-.iconSizeMedium_f11207,
+.iconSizeMedium_a64689,
 .avatar_f9f2ca {
 	border-radius: $rounding-40px !important;
 }
@@ -20,7 +32,7 @@
 	border-radius: $rounding-48px !important;
 }
 
-.a11y-font-scaled-down .avatar_f9f2ca:not(.compact_ec86aa) {
+.a11y-font-scaled-down .avatar_f9f2ca:not(.compact_f9f2ca) {
 	border-radius: $rounding-2d5rem !important;
 }
 
