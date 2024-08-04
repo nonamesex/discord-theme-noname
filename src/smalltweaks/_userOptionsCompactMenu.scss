@@ -3,24 +3,26 @@
 
 	.userPopoutOuter_c69a7b {
 		margin: 0px;
-		width: 228px;
-		border-radius: 4px;
+		border-radius: 12px;
+		width: 268px; /* 228px */
 
 		.userPopoutInner_c69a7b {
-			& > .bannerSVGWrapper_b32cc2,
-			& > .avatarWrapper_f89da9,
-			& > .profileBadges_f89da9 {
+			padding-bottom: unset;
+
+			& > .wrapper_cb78f1.biteSize_cb78f1,
+			& > .header_b07019 {
 				display: none;
 			}
 
-			& > .userPopoutOverlayBackground_c69a7b {
-				margin: unset;
-				border-radius: 4px;
+			& > .body_ad5fac {
+				overflow: unset !important;
+				padding: 12px !important;
 
-				& > .usernameSection_d2b491,
-				& > .customStatusSection_d2b491,
-				& > .divider_ae36e5,
-				& > .scrollerBase_c49869 {
+				.menus_ad5fac {
+					gap: 12px;
+				}
+
+				.username_ad5fac {
 					display: none;
 				}
 			}
