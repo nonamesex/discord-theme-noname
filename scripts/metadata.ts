@@ -62,7 +62,7 @@ export const getMetaData = () => {
 		fs.readFileSync("scripts/metadata.json", { encoding: "utf-8" })
 	) as MetaDataContent;
 
-	meta.generic.version += `+${new Date(Date.now()).setMilliseconds(0) / 1000}`
+	meta.generic.version += `+${(new Date(Date.now()).setMilliseconds(0) / 1000) - (new Date(Date.parse("2023-10-31T00:00:00")).setMilliseconds(0) / 1000)}`
 
 	const result = {
 		generic: meta.generic,
