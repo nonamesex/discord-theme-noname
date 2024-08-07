@@ -1,18 +1,13 @@
-@use 'sass:math';
+@use "sass:math";
 
-@function getBannerMask(
-	$bannerW, $bannerH,
-	$avatarW, $avatarH,
-	$avatarX, $avatarY,
-	$avatarRound
-) {
-	@return url('data:image/svg+xml;base64,' + encodeBase64(
-		'<svg width="#{$bannerW}" height="#{$bannerH}" viewBox="0 0 #{$bannerW} #{$bannerH}" xmlns="http://www.w3.org/2000/svg">'
-		+ '<defs><filter id="invert-alpha"><feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 -1 1"/></filter></defs><g filter="url(#invert-alpha)">'
-		+ '<rect fill="transparent" x="0" y="0" width="100%" height="100%"></rect>'
-		+ '<rect fill="black" rx="#{$avatarRound}" ry="#{$avatarRound}" x="#{$avatarX}" y="#{$avatarY}" width="#{$avatarW}" height="#{$avatarH}"></rect>'
-		+ '</g></svg>'
-	));
+@function getBannerMask($bannerW, $bannerH, $avatarW, $avatarH, $avatarX, $avatarY, $avatarRound) {
+	@return url("data:image/svg+xml;base64," + encodeBase64(
+			'<svg width="#{$bannerW}" height="#{$bannerH}" viewBox="0 0 #{$bannerW} #{$bannerH}" xmlns="http://www.w3.org/2000/svg">' +
+				'<defs><filter id="invert-alpha"><feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 -1 1"/></filter></defs><g filter="url(#invert-alpha)">' +
+				'<rect fill="transparent" x="0" y="0" width="100%" height="100%"></rect>' +
+				'<rect fill="black" rx="#{$avatarRound}" ry="#{$avatarRound}" x="#{$avatarX}" y="#{$avatarY}" width="#{$avatarW}" height="#{$avatarH}"></rect>' +
+				"</g></svg>"
+		));
 }
 
 .userProfileModalInner_c69a7b {

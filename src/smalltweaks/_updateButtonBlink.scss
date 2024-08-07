@@ -1,6 +1,12 @@
 @keyframes updateIconForegroundBlinking {
-	100%, 0% { fill: var(--primary-100); }
-	9%, 82% { fill: var(--green-300); } // 15%, 80% // 50%, 95%
+	100%,
+	0% {
+		fill: var(--primary-100);
+	}
+	9%,
+	82% {
+		fill: var(--green-300);
+	} // 15%, 80% // 50%, 95%
 }
 
 .updateIconForeground_ff5f90 {

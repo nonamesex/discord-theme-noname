@@ -1,8 +1,8 @@
 #app-mount > svg > mask {
-	&[id^=svg-mask-avatar-status],
-	&[id^=svg-mask-avatar-default],
-	&[id^=svg-mask-avatar-voice-call] {
-		& > circle[fill=white] {
+	&[id^="svg-mask-avatar-status"],
+	&[id^="svg-mask-avatar-default"],
+	&[id^="svg-mask-avatar-voice-call"] {
+		& > circle[fill="white"] {
 			r: 1;
 		}
 	}

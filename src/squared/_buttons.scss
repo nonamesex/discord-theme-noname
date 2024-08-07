@@ -1,5 +1,5 @@
 #app-mount > svg > mask {
-	&[id^=svg-mask-channel-call-control-button] {
+	&[id^="svg-mask-channel-call-control-button"] {
 		& > circle[fill="white"] {
 			r: 1;
 		}

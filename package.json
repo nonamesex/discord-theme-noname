@@ -10,11 +10,13 @@
     "chokidar": "^3.6.0",
     "clean-css": "^5.3.3",
     "mime": "^4.0.1",
+    "prettier": "3.3.3",
     "sass-embedded": "^1.69.5",
     "tsx": "^3.14.0",
     "typescript": "^5.2.2"
   },
   "scripts": {
+    "prettier": "prettier -w ./src",
     "build": "tsx scripts/build.ts --prod",
     "watch-vc": "tsx scripts/build.ts --watch --mod-vc"
   }

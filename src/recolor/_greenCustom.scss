@@ -7,14 +7,8 @@ $green-l: 30%;
 @use "../utils";
 @use "sass:color";
 
-$green-shades:
-	100, 130, 160, 200,
-	230, 260, 300, 330,
-	345, 360, 400, 430,
-	460, 500, 530, 560,
-	600, 630, 660, 700,
-	730, 760, 800, 830,
-	860, 900;
+$green-shades: 100, 130, 160, 200, 230, 260, 300, 330, 345, 360, 400, 430, 460, 500, 530, 560, 600, 630, 660, 700, 730,
+	760, 800, 830, 860, 900;
 
 :root {
 	$green: hsl($green-h, $green-s, $green-l);
@@ -40,6 +34,8 @@ $green-shades:
 			);
 		}
 
-		--green-#{$shade}-hsl: #{color.hue($color)} calc(var(--saturation-factor, 1) * #{color.saturation($color)}) #{color.lightness($color)};
+		--green-#{$shade}-hsl: #{color.hue($color)}
+			calc(var(--saturation-factor, 1) * #{color.saturation($color)})
+			#{color.lightness($color)};
 	}
 }

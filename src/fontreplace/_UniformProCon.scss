@@ -2,7 +2,9 @@ $font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
 
 @font-face {
 	font-family: "Uniform Pro Condensed";
-	src: local("Uniform Pro Condensed Medium"), local("UniformProCon-Med"),
+	src:
+		local("Uniform Pro Condensed Medium"),
+		local("UniformProCon-Med"),
 		url($font-cdn + "UniformProCon-Med.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
@@ -10,7 +12,9 @@ $font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
 
 @font-face {
 	font-family: "Uniform Pro Condensed";
-	src: local("Uniform Pro Condensed Medium Italic"), local("UniformProCon-MedIt"),
+	src:
+		local("Uniform Pro Condensed Medium Italic"),
+		local("UniformProCon-MedIt"),
 		url($font-cdn + "UniformProCon-MedIt.woff2") format("woff2");
 	font-weight: 500;
 	font-style: italic;
@@ -18,7 +22,9 @@ $font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
 
 @font-face {
 	font-family: "Uniform Pro Condensed";
-	src: local("Uniform Pro Condensed Bold"), local("UniformProCon-Bld"),
+	src:
+		local("Uniform Pro Condensed Bold"),
+		local("UniformProCon-Bld"),
 		url($font-cdn + "UniformProCon-Bld.woff2") format("woff2");
 	font-weight: bold;
 	font-style: normal;
@@ -26,7 +32,9 @@ $font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
 
 @font-face {
 	font-family: "Uniform Pro Condensed";
-	src: local("Uniform Pro Condensed Bold Italic"), local("UniformProCon-BldIt"),
+	src:
+		local("Uniform Pro Condensed Bold Italic"),
+		local("UniformProCon-BldIt"),
 		url($font-cdn + "UniformProCon-BldIt.woff2") format("woff2");
 	font-weight: bold;
 	font-style: italic;
@@ -34,7 +42,9 @@ $font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
 
 @font-face {
 	font-family: "Uniform Pro Condensed";
-	src: local("Uniform Pro Condensed Black"), local("UniformProCon-Blk"),
+	src:
+		local("Uniform Pro Condensed Black"),
+		local("UniformProCon-Blk"),
 		url($font-cdn + "UniformProCon-Blk.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
@@ -42,7 +52,9 @@ $font-cdn: "https://bestfonts.pro/fonts_files/60732d534960024ecb93d3b1/files/";
 
 @font-face {
 	font-family: "Uniform Pro Condensed";
-	src: local("Uniform Pro Condensed Black Italic"), local("UniformProCon-BlkIt"),
+	src:
+		local("Uniform Pro Condensed Black Italic"),
+		local("UniformProCon-BlkIt"),
 		url($font-cdn + "UniformProCon-BlkIt.woff2") format("woff2");
 	font-weight: 900;
 	font-style: italic;
