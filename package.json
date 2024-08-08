@@ -9,7 +9,9 @@
     "@types/node": "^20.9.0",
     "chokidar": "^3.6.0",
     "clean-css": "^5.3.3",
+    "glob": "11.0.0",
     "mime": "^4.0.1",
+    "node-fetch": "3.3.2",
     "prettier": "3.3.3",
     "sass-embedded": "^1.69.5",
     "tsx": "^3.14.0",
@@ -17,6 +19,7 @@
   },
   "scripts": {
     "prettier": "prettier -w ./src",
+    "classupdate": "tsx scripts/classupdate.ts",
     "build": "tsx scripts/build.ts --prod",
     "watch-vc": "tsx scripts/build.ts --watch --mod-vc"
   }
