@@ -3,26 +3,32 @@ import * as fs from "fs";
 import { glob } from "glob";
 
 interface UpdaterData {
-	file_sha: string;
-	last_fetch: number;
+	fileSha: string;
+	lastFetch: number;
 }
 
-const updater_data: UpdaterData = {
-	file_sha: "",
-	last_fetch: 0,
+const updaterData: UpdaterData = {
+	fileSha: "",
+	lastFetch: 0,
 };
 
-let updater_data_saved = updater_data;
-
-if (fs.existsSync("./scripts/classupdate/updater.json")) {
-	updater_data_saved = JSON.parse(fs.readFileSync("./scripts/classupdate/updater.json", { encoding: "utf8" }));
-}
-
-for (let v in updater_data) {
-	updater_data[v] = updater_data_saved[v];
-}
-
+const scriptRoot = "./scripts/classupdate/";
+const fileReadUtf8 = (path: fs.PathOrFileDescriptor) => fs.readFileSync(path, { encoding: "utf8" });
+const fileWriteUtf8 = (path: fs.PathOrFileDescriptor, data: string | NodeJS.ArrayBufferView) =>
+	fs.writeFileSync(path, data, { encoding: "utf8" });
+const getChangesPath = (sha?: string) =>
+	scriptRoot + "Changes-" + (sha ? sha : updaterData.fileSha).substring(0, 7) + ".txt";
 const getTimestamp = () => new Date().setMilliseconds(0) / 1000;
+
+let updaterDataSaved = updaterData;
+
+if (fs.existsSync(scriptRoot + "updater.json")) {
+	updaterDataSaved = JSON.parse(fileReadUtf8(scriptRoot + "updater.json"));
+}
+
+for (let v in updaterData) {
+	updaterData[v] = updaterDataSaved[v];
+}
 
 const getLastChangesFile = async () => {
 	let response = await fetch("https://api.github.com/repos/SyndiShanX/Update-Classes/commits");
@@ -38,23 +44,24 @@ const getLastChangesFile = async () => {
 	}
 
 	let tree = JSON.parse(await response.text())["tree"];
-	let file_sha = "";
+	let fileSha = "";
 
 	for (let v of tree) {
 		if (v["path"] === "Changes.txt") {
-			file_sha = v["sha"] as string;
+			fileSha = v["sha"] as string;
 			break;
 		}
 	}
 
-	if (file_sha === "") {
+	if (fileSha === "") {
+		console.log("Changes.txt not found");
 		return false;
 	}
 
-	updater_data.last_fetch = getTimestamp() + 60 * 10;
+	updaterData.lastFetch = getTimestamp() + 60 * 10;
 
-	if (updater_data.file_sha === file_sha) {
-		if (fs.existsSync("./scripts/classupdate/Changes-" + file_sha.substring(0, 7) + ".txt")) {
+	if (updaterData.fileSha === fileSha) {
+		if (fs.existsSync(getChangesPath(fileSha))) {
 			return true;
 		}
 	}
@@ -65,11 +72,9 @@ const getLastChangesFile = async () => {
 		return false;
 	}
 
-	fs.writeFileSync("./scripts/classupdate/Changes-" + file_sha.substring(0, 7) + ".txt", await response.text(), {
-		encoding: "utf8",
-	});
+	fileWriteUtf8(getChangesPath(fileSha), await response.text());
 
-	updater_data.file_sha = file_sha;
+	updaterData.fileSha = fileSha;
 
 	return true;
 };
@@ -84,28 +89,24 @@ const replaceClasses = (classes: RegExpMatchArray, content: string) => {
 };
 
 const classUpdate = async () => {
-	let classesFilePath = "./scripts/classupdate/Changes-" + updater_data.file_sha.substring(0, 7) + ".txt";
-
-	let updateNeeded = !fs.existsSync("./scripts/classupdate/Changes-" + updater_data.file_sha.substring(0, 7) + ".txt");
-	if (updateNeeded || getTimestamp() > updater_data.last_fetch) {
+	let updateNeeded = !fs.existsSync(getChangesPath());
+	if (updateNeeded || getTimestamp() > updaterData.lastFetch) {
 		await getLastChangesFile();
 	}
 
-	classesFilePath = "./scripts/classupdate/Changes-" + updater_data.file_sha.substring(0, 7) + ".txt";
-
-	let classes = fs.readFileSync(classesFilePath, { encoding: "utf8" }).match(/[^\r\n]+/g);
+	let classes = fileReadUtf8(getChangesPath()).match(/[^\r\n]+/g);
 	if (classes == null) {
 		return;
 	}
 
 	let paths = await glob("./src/**/*.scss");
 	for (let path of paths) {
-		let content = fs.readFileSync(path, { encoding: "utf-8" });
+		let content = fileReadUtf8(path);
 		content = replaceClasses(classes, content);
-		fs.writeFileSync(path, content);
+		fileWriteUtf8(path, content);
 	}
+
+	fileWriteUtf8(scriptRoot + "updater.json", JSON.stringify(updaterData));
 };
 
-await classUpdate();
-
-fs.writeFileSync("./scripts/classupdate/updater.json", JSON.stringify(updater_data), { encoding: "utf8" });
+classUpdate();
