@@ -1,0 +1,13 @@
+.buttons_d0696b {
+	.buttonContainer_d0696b {
+		&:has(button[aria-label="Open GIF picker"]),
+		&:has(button[aria-label="Open sticker picker"]),
+		&:has(button[aria-label="Select emoji"]) {
+			display: none;
+		}
+	}
+}
+
+.attachWrapper_f298d4 {
+	display: none;
+}
