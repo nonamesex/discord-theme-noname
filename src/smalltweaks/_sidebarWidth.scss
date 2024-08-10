@@ -74,6 +74,11 @@ $banner-height: calc($sidebar-width-multiplier * $default-banner-height);
 		column-gap: 8px;
 		// flex-wrap: wrap-reverse;
 		justify-content: space-between;
+
+		.avatarWrapper_b2ca13 {
+			max-width: 100%;
+			width: 100%;
+		}
 	}
 
 	// DM list fix
