@@ -1,7 +1,7 @@
 /*
  * ChannelListWidth
  * by Saltssaumure @ MiniDiscordThemes
- * https://github.com/MiniDiscordThemes/Snippets/tree/main/ChannelListWidth
+ * https://github.com/MiniDiscordThemes/Snippets/tree/main/themes/ChannelListWidth
  */
 
 $channellist-width: 280px;
@@ -13,8 +13,10 @@ $sidebar-width-multiplier: calc($channellist-width / $default-banner-width);
 $banner-height: calc($sidebar-width-multiplier * $default-banner-height);
 
 // Channels list
-.sidebar_a4d4d9 {
-	width: $channellist-width;
+html:not(.visual-refresh) .sidebar_a4d4d9 {
+	&:not(.hidden_a4d4d9) {
+		width: $channellist-width !important;
+	}
 
 	// Server name header
 	.headerContent_fd6364 {
