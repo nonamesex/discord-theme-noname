@@ -1,0 +1,18 @@
+.videoControls_dd069c .experimentWrapper_b6e2f9 {
+	.buttonSection_b6e2f9 {
+		&:nth-of-type(1) {
+			.caretButtonContainer_ef18ee > div:nth-of-type(2) {
+				display: none;
+			}
+			.avSpacing_b6e2f9 {
+				display: none;
+			}
+		}
+		&:nth-of-type(2) > div[class] {
+			display: none;
+		}
+	}
+	.fullRegionIcon_ef18ee {
+		padding: 4px;
+	}
+}
