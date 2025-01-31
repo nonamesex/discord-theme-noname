@@ -13,41 +13,41 @@ $sidebar-width-multiplier: calc($channellist-width / $default-banner-width);
 $banner-height: calc($sidebar-width-multiplier * $default-banner-height);
 
 // Channels list
-html:not(.visual-refresh) .sidebar_a4d4d9 {
-	&:not(.hidden_a4d4d9) {
+html:not(.visual-refresh) .sidebar_c48ade {
+	&:not(.hidden_c48ade) {
 		width: $channellist-width !important;
 	}
 
 	// Server name header
-	.headerContent_fd6364 {
+	.headerContent_f37cb1 {
 		height: calc($channellist-header-height - 24px);
 	}
 
 	// Banner
-	.animatedContainer_fd6364 {
+	.animatedContainer_f37cb1 {
 		height: $banner-height;
 	}
 
 	// Prevent banner overlapping outer
-	.animatedContainer_fd6364,
-	.bannerImage_fd6364 {
+	.animatedContainer_f37cb1,
+	.bannerImage_f37cb1 {
 		transform: none !important;
 		min-height: $channellist-header-height;
 	}
-	.bannerImage_fd6364,
-	.bannerImg_fd6364 {
+	.bannerImage_f37cb1,
+	.bannerImg_f37cb1 {
 		width: inherit;
 	}
-	.bannerImg_fd6364 {
+	.bannerImg_f37cb1 {
 		height: unset;
 		min-height: $channellist-header-height;
 	}
 
 	// Resize banner-channels spacers in servers with banners
-	&:has(.animatedContainer_fd6364) {
+	&:has(.animatedContainer_f37cb1) {
 		// Servers with boost goal
-		&:has(.container_c75f85) {
-			:not(.sectionDivider_c43953) + div[style="height: 12px;"] {
+		&:has(.container_eff079) {
+			:not(.sectionDivider__629e4) + div[style="height: 12px;"] {
 				height: calc($banner-height - $channellist-header-height) !important;
 			}
 			div[style="height: 84px;"] {
@@ -57,7 +57,7 @@ html:not(.visual-refresh) .sidebar_a4d4d9 {
 
 		// Servers without boost goal
 		& {
-			:not(.sectionDivider_c43953) + div[style="height: 12px;"] {
+			:not(.sectionDivider__629e4) + div[style="height: 12px;"] {
 				height: calc($banner-height - $channellist-header-height - 84px) !important;
 			}
 			div[style="height: 84px;"] {
@@ -67,7 +67,7 @@ html:not(.visual-refresh) .sidebar_a4d4d9 {
 	}
 
 	// Flexier user panel
-	.container_b2ca13 {
+	.container__37e49 {
 		box-sizing: border-box;
 		min-height: 53px;
 		height: auto;
@@ -77,14 +77,14 @@ html:not(.visual-refresh) .sidebar_a4d4d9 {
 		// flex-wrap: wrap-reverse;
 		justify-content: space-between;
 
-		.avatarWrapper_b2ca13 {
+		.avatarWrapper__37e49 {
 			max-width: 100%;
 			width: 100%;
 		}
 	}
 
 	// DM list fix
-	.channel_c91bad {
+	.channel__972a0 {
 		max-width: unset;
 	}
 }

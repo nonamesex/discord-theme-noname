@@ -1,38 +1,38 @@
-.winButton_a934d8 {
+.winButton__421ed {
 	top: unset;
 	height: $barheight;
 }
 
-.typeWindows_a934d8.withFrame_a934d8 {
+.typeWindows__421ed.withFrame__421ed {
 	height: $barheight;
 	margin-top: unset;
 }
 
 .platform-win {
-	.videoHeight_c84990 {
-		&.normal_c84990 {
+	.videoHeight__94748 {
+		&.normal__94748 {
 			height: calc(50vh - $barheight);
 		}
-		&.noChat_c84990 {
+		&.noChat__94748 {
 			height: calc(100vh - $barheight);
 		}
 	}
 
-	.container_e40c16 {
+	.container_a2f514 {
 		padding-top: $barheight;
 		top: -$barheight;
 	}
 
-	.layer_d4b6c5 {
+	.layer__960e4 {
 		top: -$barheight;
 		padding-top: $barheight;
 	}
 
-	.bg_d4b6c5 {
+	.bg__960e4 {
 		top: -$barheight;
 	}
 }
 
-.settingsWrapper_e2ecbf.windows_e2ecbf {
+.settingsWrapper_c9e42f.windows_c9e42f {
 	top: $barheight;
 }

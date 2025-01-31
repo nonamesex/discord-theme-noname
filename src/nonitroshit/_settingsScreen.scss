@@ -1,26 +1,26 @@
-.side_a0 {
-	.header_a0:has(+ .premiumTab_c10c74) {
+.side_b3f026 {
+	.header_b3f026:has(+ .premiumTab__581ea) {
 		display: none;
-		& ~ .item_a0:not(.premiumTab_c10c74 ~ .separator_a0 ~ .item_a0) {
+		& ~ .item_b3f026:not(.premiumTab__581ea ~ .separator_b3f026 ~ .item_b3f026) {
 			display: none;
-			& + .separator_a0 {
+			& + .separator_b3f026 {
 				display: none;
 			}
 		}
 	}
-	.socialLinks_c44e94 {
+	.socialLinks__7df54 {
 		display: none;
 	}
 }
 
 #profile-customization-tab {
-	.tryItOutSection_eb2d2c,
-	.container_da1432:has(.artContainer_da1432, .mainColumn_da1432),
-	.profileCustomizationSection_bad983 .upsellOverlayContainer_eb49af {
+	.tryItOutSection__9d295,
+	.container__8279f:has(.artContainer__8279f, .mainColumn__8279f),
+	.profileCustomizationSection__44061 .upsellOverlayContainer__0f7dc {
 		display: none;
 	}
 
-	.profileCustomizationSection_bad983 .customizationSection_b3a5c2 {
+	.profileCustomizationSection__44061 .customizationSection_ace4f5 {
 		&:nth-child(4),
 		&:nth-child(5) {
 			display: none;
@@ -29,17 +29,17 @@
 }
 
 #appearance-tab {
-	.marginTop8_f7730b:nth-of-type(2) {
-		.basicThemeSelectors_ + *:has(.themeSelectionContainer_cb7c27),
-		.selectionGroup_bde965 {
+	.marginTop8_fd297e:nth-of-type(2) {
+		.basicThemeSelectors_fbfab6 + *:has(.themeSelectionContainer__36dee),
+		.selectionGroup__6b52d {
 			display: none;
 		}
 	}
 }
 
 div[id="voice-&-video-tab"] {
-	.container_ce3dd8:has(.soundboardRow_c9d62c),
-	div > h4 ~ .backgroundOptions_ad7d79,
+	.container_c3d948:has(.soundboardRow__16280),
+	div > h4 ~ .backgroundOptions__53965,
 	div > h4:nth-of-type(2) {
 		display: none;
 	}

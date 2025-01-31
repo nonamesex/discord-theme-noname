@@ -1,4 +1,4 @@
-.panels_a4d4d9 .inner_adcaac:has(div > a > div > p) {
+.panels_c48ade .inner_e131a9:has(div > a > div > p) {
 	div > a > div > p {
 		span {
 			font-family: var(--font-primary) !important;
@@ -13,9 +13,9 @@
 	}
 
 	& > div {
-		&:has(.rtcConnectionStatus_c02c63):has(.rtcConnectionStatusConnected_c02c63) {
-			.labelWrapper_c02c63 {
-				.rtcConnectionStatusConnected_c02c63 {
+		&:has(.rtcConnectionStatus__06d62):has(.rtcConnectionStatusConnected__06d62) {
+			.labelWrapper__06d62 {
+				.rtcConnectionStatusConnected__06d62 {
 					opacity: 0;
 					width: 100%;
 				}
@@ -27,19 +27,19 @@
 			}
 		}
 
-		&:has(.rtcConnectionQualityFine_c02c63) {
+		&:has(.rtcConnectionQualityFine__06d62) {
 			a > div > p {
 				color: var(--text-positive);
 			}
 		}
 
-		&:has(.rtcConnectionQualityAverage_c02c63) {
+		&:has(.rtcConnectionQualityAverage__06d62) {
 			a > div > p {
 				color: var(--text-warning);
 			}
 		}
 
-		&:has(.rtcConnectionQualityBad_c02c63) {
+		&:has(.rtcConnectionQualityBad__06d62) {
 			a > div > p {
 				color: var(--text-danger);
 			}

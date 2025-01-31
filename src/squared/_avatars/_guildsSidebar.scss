@@ -1,17 +1,17 @@
 $guild-list-normal: $rounding-48px;
 $guild-list-selected: calc($guild-list-normal * 1.75);
 
-.listItem_c96c45 {
-	.wrapperSimple_c5f96a {
+.listItem__650eb {
+	.wrapperSimple_cc5dd2 {
 		border-radius: $guild-list-normal;
 	}
 
-	.wrapper_c5f96a > svg {
+	.wrapper_cc5dd2 > svg {
 		border-radius: $guild-list-normal;
 		transition: border-radius 150ms ease-out;
 		background-color: var(--background-secondary);
 
-		&:has(.selected_f90abb) {
+		&:has(.selected__6e9f8) {
 			border-radius: $guild-list-selected;
 		}
 
@@ -19,20 +19,20 @@ $guild-list-selected: calc($guild-list-normal * 1.75);
 			d: path("M 0,0 H 48 V 48 H 0 Z");
 		}
 
-		.folderIconWrapper_bc7085 {
+		.folderIconWrapper__48112 {
 			border-radius: unset;
 
-			.closedFolderIconWrapper_bc7085 > div.guildIcon_bc7085 {
+			.closedFolderIconWrapper__48112 > div.guildIcon__48112 {
 				border-radius: calc($guild-list-normal / 2);
 
-				&:not(.noIcon_a64689) {
+				&:not(.noIcon_f34534) {
 					background-color: var(--background-secondary);
 				}
 			}
 		}
 	}
 
-	.selected_a5ad63 > .wrapper_c5f96a > svg {
+	.selected_e5445c > .wrapper_cc5dd2 > svg {
 		border-radius: $guild-list-selected;
 	}
 }

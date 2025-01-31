@@ -1,6 +1,6 @@
 #emoji-picker-tab-panel {
-	.listItems_d53d65 > div {
-		&:has(.categoryItemLockIconContainer_bfabc4) {
+	.listItems_affa7e > div {
+		&:has(.categoryItemLockIconContainer__0fa6d) {
 			pointer-events: none;
 
 			svg:has(img) {
@@ -11,26 +11,26 @@
 }
 
 #emoji-picker-grid {
-	.nitroTopDividerContainer_e8f337,
-	.nitroBottomDivider_a3bc57 {
+	.nitroTopDividerContainer_b3fb5f,
+	.nitroBottomDivider_c656ac {
 		display: none;
 	}
 
-	.categorySectionNitroLocked_a3bc57 {
-		.headerIcon_e06857 {
+	.categorySectionNitroLocked_c656ac {
+		.headerIcon__14245 {
 			display: none;
 
-			& + .headerLabel_e06857 {
+			& + .headerLabel__14245 {
 				margin-left: unset;
 			}
 		}
 
-		&.categorySectionCollapsed_a3bc57 {
+		&.categorySectionCollapsed_c656ac {
 			pointer-events: none;
 			background-color: unset;
 		}
 
-		.emojiListRow_fbfedd li:has(img.lockedEmoji_bcf389) {
+		.emojiListRow_fc7141 li:has(img.lockedEmoji_d982c2) {
 			pointer-events: none;
 			display: none;
 		}

@@ -67,7 +67,7 @@
 
 	.avatarHintInner_f89da9,
 	.hoverIconWrapper_ab876d,
-	.imageUploaderInner_de76e4 {
+	.imageUploaderInner_e4d0bf {
 		border-radius: $rounding-80px;
 	}
 }
@@ -82,7 +82,7 @@
 	}
 }
 
-.accountProfileCard_b69b77 {
+.accountProfileCard__1fed1 {
 	.bannerSVGWrapper_b32cc2 foreignObject {
 		--mask: #{getBannerMask(660px, 100px, 92px, 92px, 16px, 76px, calc($rounding-80px * 1.5))};
 		mask: var(--mask);

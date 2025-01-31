@@ -14,28 +14,28 @@
 // 	--brand-experiment-560: var(--primary-400);
 // }
 
-.accountProfilePopoutWrapper_b2ca13 .submenuPaddingContainer_d90b3d {
+.accountProfilePopoutWrapper__37e49 .submenuPaddingContainer_c1e9c4 {
 	transform: translate(16px, -8px);
 
-	.submenu_d90b3d {
+	.submenu_c1e9c4 {
 		min-width: unset;
 
 		& > div {
 			display: flex;
 		}
 
-		.separator_d90b3d {
+		.separator_c1e9c4 {
 			display: none;
 		}
 
-		.statusItem_ad5fac {
+		.statusItem_af7fb7 {
 			display: grid;
 			grid-template-rows: 10px 1fr;
 			grid-template-columns: 10px 1fr;
 			padding: 11px 11px;
 
-			.status_ad5fac,
-			.description_ad5fac {
+			.status_af7fb7,
+			.description_af7fb7 {
 				display: none;
 			}
 		}
