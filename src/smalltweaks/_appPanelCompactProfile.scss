@@ -1,0 +1,25 @@
+.user-profile-popout:has(.menus_ce8328) {
+	border-radius: 12px;
+	width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 15px);
+
+	.inner_c0bea0 {
+		padding-bottom: unset;
+
+		header {
+			display: none;
+		}
+		.body_ce8328 {
+			overflow: unset !important;
+			padding: 8px !important;
+
+			.menus_ce8328 {
+				gap: 8px;
+			}
+
+			.username_ce8328,
+			.clickableContainer__39ec2 {
+				display: none;
+			}
+		}
+	}
+}

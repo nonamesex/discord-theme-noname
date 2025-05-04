@@ -1,13 +1,19 @@
-.buttons__74017 {
-	.buttonContainer__74017 {
-		&:has(button[aria-label="Open GIF picker"]),
-		&:has(button[aria-label="Open sticker picker"]),
-		&:has(button[aria-label="Select emoji"]) {
+.formWithLoadedChatInput_f75fb0 {
+	.attachWrapper__0923f {
+		display: none;
+	}
+
+	.buttons__74017 {
+		.buttonContainer__74017 {
+			&:has(button[aria-label="Open GIF picker"]),
+			&:has(button[aria-label="Open sticker picker"]),
+			&:has(button[aria-label="Select emoji"]) {
+				display: none;
+			}
+		}
+
+		.channelAppLauncher_e6e74f {
 			display: none;
 		}
 	}
-}
-
-.attachWrapper__0923f {
-	display: none;
 }

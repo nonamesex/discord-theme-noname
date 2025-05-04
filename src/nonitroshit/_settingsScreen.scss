@@ -16,24 +16,24 @@
 #profile-customization-tab {
 	.tryItOutSection__9d295,
 	.container__8279f:has(.artContainer__8279f, .mainColumn__8279f),
-	.profileCustomizationSection__44061 .upsellOverlayContainer__0f7dc {
+	.profileCustomizationSection__44061 .upsellOverlayContainer__0f7dc,
+	.upsellContainer__0b69f {
 		display: none;
 	}
 
 	.profileCustomizationSection__44061 .customizationSection_ace4f5 {
 		&:nth-child(4),
-		&:nth-child(5) {
+		&:nth-child(5),
+		&:nth-child(6) {
 			display: none;
 		}
 	}
 }
 
 #appearance-tab {
-	.marginTop8_fd297e:nth-of-type(2) {
-		.basicThemeSelectors_fbfab6 + *:has(.themeSelectionContainer__36dee),
-		.selectionGroup__6b52d {
-			display: none;
-		}
+	.basicThemeSelectors_fbfab6 + section:has(.themeSelectionContainer__36dee),
+	.selectionGroup__6b52d {
+		display: none;
 	}
 }
 

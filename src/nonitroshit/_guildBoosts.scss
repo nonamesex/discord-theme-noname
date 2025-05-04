@@ -1,7 +1,7 @@
 ul.content__99f8c li:has(div[data-list-item-id^="channels___boosts-"]) {
 	display: none;
 
-	& + li {
-		margin-top: 12px;
+	& + div {
+		display: none;
 	}
 }

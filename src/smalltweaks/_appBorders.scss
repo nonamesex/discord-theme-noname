@@ -1,8 +1,30 @@
-.container_c48ade {
-	&:not(:has(nav.hidden_ef3116)) .base_c48ade {
+// Adds padding to the right and bottom of the window. Same for the notice at the top
+
+.base_c48ade {
+	.notice__6e2b9 {
+		border-radius: 6px;
 		margin: 0px 6px 6px 0px;
 	}
-	.base_c48ade {
-		border-radius: 6px;
+
+	.content_c48ade {
+		margin: 0px 6px 6px 0px;
+
+		div.sidebar_c48ade {
+			.sidebarList_c48ade {
+				border-radius: 6px 0px 0px 6px;
+			}
+	
+			section.panels_c48ade {
+				border-bottom-left-radius: 6px;
+			}
+		}
+
+		.page_c48ade {
+			border-radius: 0px 6px 6px 0px;
+	
+			.callContainer_cb9592 {
+				border-radius: 0px 6px 6px 0px;
+			}
+		}
 	}
 }

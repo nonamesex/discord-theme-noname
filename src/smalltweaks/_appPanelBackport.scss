@@ -1,0 +1,31 @@
+// Brings back the "app-panel" that doesn't overlap the guild list
+
+.visual-refresh div.sidebar_c48ade {
+	nav.wrapper_ef3116.guilds_c48ade {
+		margin-bottom: unset;
+	}
+
+	div.sidebarList_c48ade > nav > div.scroller__629e4 {
+		margin-bottom: 1px;
+	}
+
+	section.panels_c48ade {
+		.panel__5dec7.activityPanel_c48ade {
+			border-top-left-radius: unset;
+			border-top-right-radius: unset;
+		}
+
+		left: unset;
+		right: 0px;
+		width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
+		border-radius: unset;
+		bottom: 0px;
+		border-right-width: 0px;
+		border-bottom-width: 0px;
+		border-left-width: 0px;
+	}
+
+	&:after {
+		display: none;
+	}
+}

@@ -1,0 +1,61 @@
+@use "sass:math";
+
+@function getBannerMask($bannerW, $bannerH, $avatarW, $avatarH, $avatarX, $avatarY, $avatarRound) {
+	@return url("data:image/svg+xml;base64," + encodeBase64(
+			'<svg width="#{$bannerW}" height="#{$bannerH}" viewBox="0 0 #{$bannerW} #{$bannerH}" xmlns="http://www.w3.org/2000/svg">' +
+				'<defs><filter id="invert-alpha"><feColorMatrix type="matrix" values="1 0 0 0 1  0 1 0 0 1  0 0 1 0 1  0 0 0 -1 1"/></filter></defs><g filter="url(#invert-alpha)">' +
+				'<rect fill="transparent" x="0" y="0" width="100%" height="100%"></rect>' +
+				'<rect fill="black" rx="#{$avatarRound}" ry="#{$avatarRound}" x="#{$avatarX}" y="#{$avatarY}" width="#{$avatarW}" height="#{$avatarH}"></rect>' +
+				"</g></svg>"
+		));
+}
+
+.user-profile-popout {
+	--mask: #{getBannerMask(300px, 105px, 92px, 92px, 10px, 55px, calc($rounding-80px * 1.5))};
+
+	&.custom-theme-background {
+		--mask: #{getBannerMask(300px, 105px, 92px, 92px, 6px, 51px, calc($rounding-80px * 1.5))};
+	}
+
+	header .mask__68edb foreignObject {
+		mask: var(--mask);
+		-webkit-mask: var(--mask);
+	}
+
+	.avatar__75742 foreignObject .overlay__75742:after,
+	.avatar_d28e10 foreignObject .overlay_d28e10:after { // Settings preview
+		border-radius: $rounding-80px;
+	}
+}
+
+.user-profile-modal {
+	--mask: #{getBannerMask(600px, 210px, 136px, 136px, 16px, 136px, calc($rounding-120px * 1.5))};
+
+	header .mask__68edb foreignObject {
+		mask: var(--mask);
+		-webkit-mask: var(--mask);
+	}
+}
+
+.user-profile-sidebar {
+	--mask: #{getBannerMask(340px, 120px, 92px, 92px, 10px, 66px, calc($rounding-80px * 1.5))};
+
+	header .mask__68edb foreignObject {
+		mask: var(--mask);
+		-webkit-mask: var(--mask);
+	}
+
+	.avatar__75742 foreignObject .overlay__75742:after {
+		border-radius: $rounding-80px;
+	}
+}
+
+// My Account tab
+.accountProfileCard__1fed1 {
+	--mask: #{getBannerMask(660px, 100px, 92px, 92px, 16px, 76px, calc($rounding-80px * 1.5))};
+
+	.mask__68edb foreignObject {
+		mask: var(--mask);
+		-webkit-mask: var(--mask);
+	}
+}

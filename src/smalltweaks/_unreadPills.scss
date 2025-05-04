@@ -1,0 +1,35 @@
+// chats
+.containerDefault_c69b6d {
+	.unread__2ea32 {
+		height: 12px;
+		border-radius: var(--radius-xs);
+		margin-top: -6px;
+		left: -1px;
+	}
+}
+
+// guilds
+.pill_e5445c, // guild
+.pill__1f388, // dm discord
+.pill_ed9a5f // dm user
+{
+	&.wrapper__58105 {
+		width: 12px;
+		justify-content: center;
+
+		.item__58105 {
+			margin-left: 6px !important;
+			border-radius: 4px;
+			transform: none !important;
+			zoom: 0.5;
+		}
+	}
+}
+
+// dm chats
+.unreadPill__972a0 {
+	height: 12px;
+	border-radius: var(--radius-xs);
+	margin-top: -6px;
+	left: -2px;
+}

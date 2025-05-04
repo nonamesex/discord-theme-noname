@@ -1,41 +1,11 @@
-// --brand-500: 235 85.6% 64.7%
+$brand-h: 217;
+$brand-s: 91%;
+$brand-l: 54%;
 
-$brand-h: 215.56;
-$brand-s: 53.78%;
-$brand-l: 49.22%;
-
-@use "../utils";
-@use "sass:color";
-
-$brand-shades: 100, 130, 160, 200, 230, 260, 300, 330, 345, 360, 400, 430, 460, 500, 530, 560, 600, 630, 660, 700, 730,
-	760, 800, 830, 860, 900;
+@use "palette";
 
 :root {
-	$brand: hsl($brand-h, $brand-s, $brand-l);
-	$brand-100: hsl($brand-h, utils.lerp(0.2, 100%, $brand-s), utils.lerp(0.2, 100%, $brand-l));
-	$brand-900: hsl($brand-h, utils.lerp(0.8, $brand-s, 000%), utils.lerp(0.8, $brand-l, 000%));
-
-	@each $shade in $brand-shades {
-		$color: rgb(0, 0, 0);
-
-		@if 500 >= $shade {
-			$mult: calc(1 - ($shade - 100) / 400);
-			$color: rgb(
-				utils.lerp($mult, color.red($brand), color.red($brand-100)),
-				utils.lerp($mult, color.green($brand), color.green($brand-100)),
-				utils.lerp($mult, color.blue($brand), color.blue($brand-100))
-			);
-		} @else {
-			$mult: calc(($shade - 500) / 400);
-			$color: rgb(
-				utils.lerp($mult, color.red($brand), color.red($brand-900)),
-				utils.lerp($mult, color.green($brand), color.green($brand-900)),
-				utils.lerp($mult, color.blue($brand), color.blue($brand-900))
-			);
-		}
-
-		--brand-#{$shade}-hsl: #{color.hue($color)}
-			calc(var(--saturation-factor, 1) * #{color.saturation($color)})
-			#{color.lightness($color)};
-	}
+	@include palette.generator((white hsl($brand-h $brand-s $brand-l) black), 1, 100, 1) using ($weight, $color) {
+    --blurple-#{$weight}-hsl: #{hue($color)} calc(var(--saturation-factor, 1) * #{saturation($color)}) #{lightness($color)};
+  }
 }

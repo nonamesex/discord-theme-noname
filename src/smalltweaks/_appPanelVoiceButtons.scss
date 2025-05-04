@@ -1,0 +1,41 @@
+// Removes the Activity and Soundboard buttons. Moves the Noise Suppression and Disconnect buttons in their place
+
+section.panels_c48ade {
+	.actionButtons_e131a9 {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+
+		> .disabledButtonWrapper__201d5,
+		> button:nth-of-type(3),
+		> button:nth-of-type(4),
+		> div:last-of-type {
+			display: none;
+		}
+	}
+
+	.voiceButtonsContainer_e131a9 {
+		--btn-width: calc((var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)) / 4 - var(--space-xs) - var(--space-xs) / 4);
+
+		position: absolute;
+		left: calc(-2px + var(--btn-width) * 2 + var(--space-xs) * 2);
+		bottom: 5px;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-gap: var(--space-xs);
+		justify-content: space-between;
+
+		> button {
+			background-color: var(--button-secondary-background);
+			color: var(--button-secondary-text);
+			height: var(--space-32);
+			min-height: var(--space-32);
+			border: 1px solid var(--border-faint);
+			border-radius: var(--radius-sm);
+			min-width: auto;
+			width: var(--btn-width);
+
+			&:hover {
+				background-color: var(--button-secondary-background-hover);
+			}
+		}
+	}
+}

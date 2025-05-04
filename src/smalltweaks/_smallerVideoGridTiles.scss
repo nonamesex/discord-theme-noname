@@ -1,3 +1,12 @@
 .videoGrid_a21736 .tile_d6271c:not(:has(video)) {
 	max-width: 384px;
 }
+
+.tileChild__2f4f7 .background_fb62e2 {
+	background: linear-gradient(0deg, black 0%, white 100%);
+	background-blend-mode: soft-light;
+
+	&:before {
+		display: none;
+	}
+}

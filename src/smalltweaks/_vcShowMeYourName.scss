@@ -1,10 +1,11 @@
 .vc-smyn-suffix {
 	font-size: 0.75rem;
 	margin-left: 0.25rem;
-
+	
 	&:after {
 		display: none;
 	}
+
 	&:before {
 		content: "@";
 	}

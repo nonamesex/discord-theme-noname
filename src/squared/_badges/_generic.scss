@@ -2,8 +2,8 @@
 	svg > defs > rect {
 		&[id$="upper_badge_masks"],
 		&[id$="lower_badge_masks"] {
-			rx: calc($badgeRounding * 2);
-			ry: calc($badgeRounding * 2);
+			rx: calc($badgeRounding * 1.5);
+			ry: calc($badgeRounding * 1.5);
 		}
 	}
 }

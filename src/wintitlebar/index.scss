@@ -1,4 +1,64 @@
-@import "variables";
-@import "height";
-@import "buttons";
-@import "title";
+.visual-refresh {
+	--custom-app-top-bar-height: 38px;
+}
+
+div.bar_c38106[data-windows=true] {
+	.title_c38106 {
+		justify-content: flex-start;
+		margin-left: 9px;
+
+		.title__85643 {
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+
+			> :nth-child(2) {
+				&::before {
+					content: "Discord – ";
+				}
+
+				font-family: "Segoe UI";
+				font-size: 12px;
+				font-weight: 400;
+				color: var(--text-normal);
+			}
+		}
+	}
+
+	.trailing_c38106 {
+		.recentsIcon_c99c29 {
+			transition: opacity 100ms;
+			&:not(:hover) {
+				opacity: 0;
+			}
+		}
+
+		> a {
+			display: none;
+		}
+
+		.winButtons_c38106 {
+			margin-right: 6px;
+			gap: 6px;
+
+			&:before {
+				display: none;
+			}
+
+			.winButton_c38106 {
+				width: 34px; // 36px
+				height: 26px; // 28px
+				border-radius: 4px;
+			}
+
+			.winButtonMinMax_c38106:nth-child(1) rect {
+				y: 10;
+			}
+
+			.winButtonClose_c38106:hover {
+				background-color: #e81123;
+			}
+		}
+	}
+}

@@ -8,7 +8,6 @@
 
 // callContainer bottom
 .centerButton_f1ceac {
-	padding: 12px 12px;
 	border-radius: $rounding-48px;
 }
 
@@ -22,11 +21,13 @@
 	border-radius: $rounding-40px;
 }
 
+// TODO
 // callContainer
 .participantsButton__211d1 {
 	border-radius: $rounding-32px;
 }
 
+// TODO
 // videoGrid tile
 .button__201d5.sizeLarge__201d5 {
 	border-radius: $rounding-48px;
@@ -37,14 +38,28 @@
 	border-radius: $rounding-36px;
 }
 
+// TODO
 // Forum "New Post"
 .form_d9be46 .submitButton_d9be46 {
 	border-radius: $rounding-36px;
 }
 
+// TODO
 // Forum tags
 .sortDropdown_f369db,
 .tagsButton_f369db,
 .pill_a2c9e8 {
+	border-radius: $rounding-32px;
+}
+
+:where(.button_fb7f94).banner_fb7f94, :where(.button_fb7f94).hover_fb7f94 {
+	border-radius: $rounding-32px;
+}
+
+// app-panel voice buttons
+.visual-refresh .experimentButton_e131a9,
+section.panels_c48ade .voiceButtonsContainer_e131a9 > button,
+.visual-refresh button.button__67645,
+.visual-refresh span.button__67645 {
 	border-radius: $rounding-32px;
 }

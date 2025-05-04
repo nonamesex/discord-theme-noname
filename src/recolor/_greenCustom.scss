@@ -1,41 +1,11 @@
-// --green-500: 235 85.6% 64.7%
-
 $green-h: 125;
 $green-s: 100%;
 $green-l: 30%;
 
-@use "../utils";
-@use "sass:color";
-
-$green-shades: 100, 130, 160, 200, 230, 260, 300, 330, 345, 360, 400, 430, 460, 500, 530, 560, 600, 630, 660, 700, 730,
-	760, 800, 830, 860, 900;
+@use "palette";
 
 :root {
-	$green: hsl($green-h, $green-s, $green-l);
-	$green-100: hsl($green-h, utils.lerp(0.2, 100%, $green-s), utils.lerp(0.2, 100%, $green-l));
-	$green-900: hsl($green-h, utils.lerp(0.8, $green-s, 000%), utils.lerp(0.8, $green-l, 000%));
-
-	@each $shade in $green-shades {
-		$color: rgb(0, 0, 0);
-
-		@if 500 >= $shade {
-			$mult: calc(1 - ($shade - 100) / 400);
-			$color: rgb(
-				utils.lerp($mult, color.red($green), color.red($green-100)),
-				utils.lerp($mult, color.green($green), color.green($green-100)),
-				utils.lerp($mult, color.blue($green), color.blue($green-100))
-			);
-		} @else {
-			$mult: calc(($shade - 500) / 400);
-			$color: rgb(
-				utils.lerp($mult, color.red($green), color.red($green-900)),
-				utils.lerp($mult, color.green($green), color.green($green-900)),
-				utils.lerp($mult, color.blue($green), color.blue($green-900))
-			);
-		}
-
-		--green-#{$shade}-hsl: #{color.hue($color)}
-			calc(var(--saturation-factor, 1) * #{color.saturation($color)})
-			#{color.lightness($color)};
-	}
+	@include palette.generator((white hsl($green-h $green-s $green-l) black), 1, 100, 1) using ($weight, $color) {
+    --green-new-#{$weight}-hsl: #{hue($color)} calc(var(--saturation-factor, 1) * #{saturation($color)}) #{lightness($color)};
+  }
 }

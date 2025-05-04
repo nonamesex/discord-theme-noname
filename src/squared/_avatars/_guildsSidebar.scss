@@ -1,38 +1,48 @@
-$guild-list-normal: $rounding-48px;
-$guild-list-selected: calc($guild-list-normal * 1.75);
+$rounding-guild: $rounding-40px;
+$rounding-folder: $rounding-48px;
+$rounding-folder-guild: calc($rounding-guild * 0.8125);
 
-.listItem__650eb {
-	.wrapperSimple_cc5dd2 {
-		border-radius: $guild-list-normal;
+.folderGroup__48112 {
+	.folderGroupBackground__48112 {
+		border-radius: $rounding-folder;
 	}
 
-	.wrapper_cc5dd2 > svg {
-		border-radius: $guild-list-normal;
-		transition: border-radius 150ms ease-out;
-		background-color: var(--background-secondary);
+	.folderIconWrapper__48112 .folderIcon__48112 {
+		border-radius: $rounding-folder-guild;
+	}
 
-		&:has(.selected__6e9f8) {
-			border-radius: $guild-list-selected;
+	.folderPreviewWrapper__48112 {
+		border-radius: $rounding-folder;
+
+		.folderPreviewGuildIcon__48112 {
+			&:nth-child(1) {
+				border-radius: $rounding-folder-guild $rounding-20px $rounding-20px $rounding-20px !important;
+			}
+			&:nth-child(2) {
+				border-radius: $rounding-20px $rounding-folder-guild $rounding-20px $rounding-20px !important;
+			}
+			&:nth-child(3) {
+				border-radius: $rounding-20px $rounding-20px $rounding-20px $rounding-folder-guild !important;
+			}
+			&:nth-child(4) {
+				border-radius: $rounding-20px $rounding-20px $rounding-folder-guild $rounding-20px !important;
+			}
 		}
+	}
+}
 
+.listItem__650eb {
+	.wrapper_cc5dd2 > svg {
 		& > defs > path {
 			d: path("M 0,0 H 48 V 48 H 0 Z");
 		}
 
-		.folderIconWrapper__48112 {
-			border-radius: unset;
-
-			.closedFolderIconWrapper__48112 > div.guildIcon__48112 {
-				border-radius: calc($guild-list-normal / 2);
-
-				&:not(.noIcon_f34534) {
-					background-color: var(--background-secondary);
-				}
+		& > foreignObject {
+			.childWrapper__6e9f8,
+			.circleIconButton__5bc7e,
+			.wrapper__6e9f8 .icon__6e9f8 {
+				border-radius: $rounding-guild !important;
 			}
 		}
-	}
-
-	.selected_e5445c > .wrapper_cc5dd2 > svg {
-		border-radius: $guild-list-selected;
 	}
 }

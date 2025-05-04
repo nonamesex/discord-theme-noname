@@ -1,6 +1,8 @@
-ul[data-list-id="guildsnav"] {
-	.tutorialContainer__650eb,
-	.footer__214dc {
+.tutorialContainer__650eb {
+	& + .listItem__650eb:has(.discoveryIcon_ef3116) {
 		display: none;
 	}
+
+	bottom: 16px;
+	position: fixed;
 }

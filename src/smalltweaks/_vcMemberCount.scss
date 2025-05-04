@@ -1,7 +1,13 @@
 .vc-membercount-widget.vc-membercount-member-list {
-	flex-direction: column;
 	justify-content: unset;
+	margin-top: unset;
+	padding-inline: unset;
+
+	flex-direction: column;
 	pointer-events: none;
+
+	height: auto;
+	padding: var(--space-lg) var(--space-xxs) var(--space-xxs) var(--space-md);
 
 	.vc-membercount-online-dot,
 	.vc-membercount-total-dot {
@@ -10,19 +16,20 @@
 
 	.vc-membercount-online,
 	.vc-membercount-total {
-		font-size: 12px;
-		line-height: 16px;
+		font-family: var(--font-primary);
+		font-size: 14px;
+		line-height: 1.2857142857142858;
+		font-weight: 500;
+
 		letter-spacing: 0.02em;
-		font-family: var(--font-display);
-		font-weight: 600;
 		color: var(--channels-default);
 	}
 
 	.vc-membercount-online::before {
-		content: "ONLINE — ";
+		content: "Online — ";
 	}
 
 	.vc-membercount-total::before {
-		content: "MEMBERS — ";
+		content: "Members — ";
 	}
 }

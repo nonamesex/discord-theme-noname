@@ -1,0 +1,26 @@
+:root {
+	--chatWallpaper-position: 100% 100%;
+	--chatWallpaper-repeat: no-repeat;
+	--chatWallpaper-size: cover;
+	--chatWallpaper-image: none;
+	--chatWallpaper-blend-mode: normal;
+	--chatWallpaper-color: var(--bg-overlay-chat, var(--background-base-lower));
+}
+
+.visual-refresh main.chatContent_f75fb0 {
+	--channels-default: var(--text-muted);
+	--chat-text-muted: var(--text-muted);
+	--text-low-contrast: var(--text-secondary);
+
+	background-position: var(--chatWallpaper-position);
+	background-repeat: var(--chatWallpaper-repeat);
+	background-size: var(--chatWallpaper-size);
+	background-image: var(--chatWallpaper-image);
+
+	background-blend-mode: var(--chatWallpaper-blend-mode);
+	background-color: var(--chatWallpaper-color);
+}
+
+.wallpaperContainer__5fa7b {
+	display: none !important;
+}

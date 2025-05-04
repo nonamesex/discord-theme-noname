@@ -2,17 +2,19 @@
 
 .channel__972a0.container_e45859:has(.closeButton__972a0) .layout__20a53 {
 	flex-grow: 1;
+	padding: 4px 0;
 	height: 32px;
 
 	.avatar__20a53 {
 		width: 24px;
 		height: 24px;
+		margin-right: 8px;
 
 		.wrapper__44b0c {
 			width: 24px !important;
 			height: 24px !important;
 
-			& > svg {
+			> svg {
 				width: 30px;
 				height: 30px;
 
@@ -25,7 +27,7 @@
 					mask: url(#svg-mask-avatar-default);
 				}
 
-				& > *:not(foreignObject) {
+				> *:not(foreignObject) {
 					display: none;
 				}
 			}

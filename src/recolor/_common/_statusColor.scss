@@ -1,11 +1,23 @@
-svg.mask__44b0c.svg__44b0c {
-	rect[fill="#23a55a"] {
-		fill: var(--green-360);
-	}
-	rect[fill="#f0b232"] {
-		fill: var(--yellow-300);
-	}
-	rect[fill="#f23f43"] {
-		fill: var(--red-400);
-	}
+$status-online: var(--green-new-36);
+$status-idle: var(--yellow-new-30);
+$status-dnd: var(--red-new-40);
+
+[fill="#43a25a"] {
+	fill: $status-online;
+}
+[fill="#ca9654"] {
+	fill: $status-idle;
+}
+[fill="#d83a42"] {
+	fill: $status-dnd;
+}
+
+[style="background-color: rgb(64, 162, 90);"] {
+	background-color: $status-online !important;
+}
+[style="background-color: rgb(202, 150, 84);"] {
+	background-color: $status-idle !important;
+}
+[style="background-color: rgb(216, 58, 66);"] {
+	background-color: $status-dnd !important;
 }

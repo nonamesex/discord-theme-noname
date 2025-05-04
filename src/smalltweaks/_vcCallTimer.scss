@@ -1,47 +1,48 @@
-.panels_c48ade .inner_e131a9:has(div > a > div > p) {
-	div > a > div > p {
+// Moves the call timer to the ping icon and changes color depending on the connection status
+
+div.rtcConnectionStatusWrapper__06d62 {
+	& > a > div > p {
 		span {
 			font-family: var(--font-primary) !important;
 		}
 
 		display: none;
-		font-size: 14px;
-		font-weight: 600;
-		pointer-events: none;
+		font-size: 16px;
+		line-height: 1.25;
+		font-weight: 500;
 		position: fixed;
-		transform: translate(20px, -30px);
+		transform: translate(20px, -38px);
+		pointer-events: none;
 	}
 
-	& > div {
-		&:has(.rtcConnectionStatus__06d62):has(.rtcConnectionStatusConnected__06d62) {
+	&:has(.rtcConnectionQualityFine__06d62) {
+		& > a > div > p {
+			color: var(--text-positive);
+		}
+	}
+
+	&:has(.rtcConnectionQualityAverage__06d62) {
+		& > a > div > p {
+			color: var(--text-warning);
+		}
+	}
+
+	&:has(.rtcConnectionQualityBad__06d62) {
+		& > a > div > p {
+			color: var(--text-danger);
+		}
+	}
+
+	&:has(.rtcConnectionStatusConnected__06d62) {
+		& > a > div > p {
+			display: unset;
+		}
+
+		.rtcConnectionStatus__06d62 {
 			.labelWrapper__06d62 {
-				.rtcConnectionStatusConnected__06d62 {
-					opacity: 0;
-					width: 100%;
-				}
-
+				opacity: 0;
 				width: 100%;
-			}
-			a > div > p {
-				display: block;
-			}
-		}
-
-		&:has(.rtcConnectionQualityFine__06d62) {
-			a > div > p {
-				color: var(--text-positive);
-			}
-		}
-
-		&:has(.rtcConnectionQualityAverage__06d62) {
-			a > div > p {
-				color: var(--text-warning);
-			}
-		}
-
-		&:has(.rtcConnectionQualityBad__06d62) {
-			a > div > p {
-				color: var(--text-danger);
+				user-select: none;
 			}
 		}
 	}

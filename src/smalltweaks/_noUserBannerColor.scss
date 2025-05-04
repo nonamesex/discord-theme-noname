@@ -1,9 +1,11 @@
-.banner__68edb {
-	&.modalBanner_c3e427,
-	&.panelBanner_c3e427,
-	&.popoutBanner_c3e427,
-	&.bannerNormal_ab876d,
-	&.settingsBanner_c3e427 {
-		background-color: initial !important;
+.user-profile-popout,
+.user-profile-modal,
+.user-profile-sidebar,
+.accountProfileCard__1fed1 {
+	&:not(.custom-theme-background) {
+		.banner__68edb:not([style*=background-image]) {
+			background: linear-gradient(0deg, black 0%, white 100%);
+			background-blend-mode: soft-light;
+		}
 	}
 }

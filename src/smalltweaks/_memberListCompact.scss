@@ -1,15 +1,25 @@
+// Removes status (both), reduces the size of the avatar and nickname, and moves the vc-platform-indicator icons to the right edge.
+
+.visual-refresh {
+	--custom-member-list-width: 280px;
+}
+
 .memberInner__5d473.layout__91a9d {
+	box-sizing: unset;
+	padding: 4px 0;
 	height: 32px;
+	width: 100%;
 
 	.avatar__91a9d {
 		width: 24px;
 		height: 24px;
+		margin-right: 8px;
 
 		.wrapper__44b0c {
 			width: 24px !important;
 			height: 24px !important;
 
-			& > svg {
+			> svg {
 				width: 30px;
 				height: 30px;
 
@@ -22,7 +32,7 @@
 					mask: url(#svg-mask-avatar-default);
 				}
 
-				& > *:not(foreignObject) {
+				> *:not(foreignObject) {
 					display: none;
 				}
 			}
@@ -37,15 +47,25 @@
 			font-size: 14px;
 		}
 
-		.vc-platform-indicator {
+		.vc-member-list-decorators-wrapper {
+			margin-left: unset;
 			order: 1;
-			margin-left: unset !important;
+
+			.vc-platform-indicator {
+				flex-direction: row-reverse;
+
+				svg {
+					width: 12px;
+					height: 12px;
+				}
+			}
 		}
 
 		.icon__5d473 {
 			margin-left: unset;
 			width: 12px;
 			height: 12px;
+			top: unset;
 
 			&.premiumIcon__5d473 {
 				margin-top: 2px;
